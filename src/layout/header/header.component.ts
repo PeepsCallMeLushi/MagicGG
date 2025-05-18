@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { MatButtonModule, MatIconButton } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
 @Component({
 	selector: 'app-header',
@@ -9,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 		MatButtonModule,
 		MatIconModule,
 		MatToolbarModule,
+		RouterModule,
 	],
 	standalone: true,
 	templateUrl: './header.component.html',

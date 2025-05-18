@@ -1,6 +1,17 @@
 <mat-drawer-container class="app-container" autosize>
 	<mat-drawer #drawer class="app-sidenav" mode="over">
-		<p>Auto-resizing sidenav</p>
+		@for (item of sideNavItems; track $index) {
+			<button class="side-nav-items"
+					mat-button
+					(click)="drawer.toggle(); goToRoute(item.url)">
+				<mat-icon>
+					{{item.icon}}
+				</mat-icon>
+				<span>
+					{{item.text}}
+				</span>
+			</button>
+		}
 	</mat-drawer>
 
 	<div class="app-sidenav-content">
