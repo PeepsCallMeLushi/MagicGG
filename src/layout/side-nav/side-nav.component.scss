@@ -1,0 +1,15 @@
+.app-container {
+	height: calc(100vh - 64px);
+}
+
+.app-sidenav-content {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.app-sidenav {
+	border-radius: 0px;
+	padding: 20px;
+}

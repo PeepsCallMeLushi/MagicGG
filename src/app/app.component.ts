@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../layout/header/header.component';
+import { SideNavComponent } from '../layout/side-nav/side-nav.component';
 
 @Component({
 	selector: 'app-root',
-	imports: [RouterOutlet],
+	imports: [
+		HeaderComponent,
+		SideNavComponent,
+	],
+	standalone: true,
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'
 })
-export class AppComponent {
-	title = 'MagicGG';
-}
+export class AppComponent {}

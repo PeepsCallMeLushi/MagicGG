@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"MagicGG2": {
+		"MagicGG": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -32,6 +32,7 @@
 							}
 						],
 						"styles": [
+							"@angular/material/prebuilt-themes/cyan-orange.css",
 							"src/styles.scss"
 						],
 						"scripts": []
@@ -91,15 +92,19 @@
 							}
 						],
 						"styles": [
+							"@angular/material/prebuilt-themes/cyan-orange.css",
 							"src/styles.scss"
 						],
 						"scripts": []
 					}
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        }
+				},
+				"deploy": {
+					"builder": "angular-cli-ghpages:deploy"
+				}
 			}
 		}
-	}
+  },
+  "cli": {
+    "analytics": false
+  }
 }
