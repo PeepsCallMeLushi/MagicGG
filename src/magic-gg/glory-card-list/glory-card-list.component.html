@@ -1,1 +1,7 @@
-<p>glory-card-list works!</p>
+<div class="card-list-container">
+	@for (card of cardList; track $index) {
+		<app-glory-card
+				[cardToBeDisplayed]="card">
+		</app-glory-card>
+	}
+</div>

@@ -1,0 +1,25 @@
+mat-card {
+	width: 250px;
+	height: 346.13px;
+	display: inline-block;
+	margin: 10px;
+
+	mat-card-title {
+		height: 30px;
+	}
+
+	span {
+		z-index: 1000;
+		position: relative;
+		color: transparent;
+		font-size: 14px;
+	}
+
+	img {
+		position: absolute;
+		width: 250px;
+		top: 0px;
+		left: 0px;
+		border-radius: 16px;
+	}
+}
