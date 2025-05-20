@@ -13,12 +13,12 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
 	{
 		text: 'Lista de cartas \'Glory\'',
 		icon: 'receipt_long',
-		url: 'card-list/glory-cards'
+		url: 'card-list/glory'
 	},
 	{
 		text: 'Lista de cartas \'Friend Or Foe\'',
 		icon: 'contact_page',
-		url: 'card-list/friend-or-foe-cards'
+		url: 'card-list/friend-or-foe'
 	},
 	{
 		text: 'Glossário',
