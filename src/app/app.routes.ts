@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { GloryCardListComponent } from '../magic-gg/glory-card-list/glory-card-list.component';
-import { FriendFoeCardListComponent } from '../magic-gg/friend-foe-card-list/friend-foe-card-list.component';
+import { ConspiracyListComponent } from '../magic-gg/conspiracy-card-list/conspiracy-card-list.component';
 import { HomePageComponent } from '../magic-gg/home-page/home-page.component';
 import { GlossaryComponent } from '../magic-gg/glossary/glossary.component';
 import { CardViewerComponent } from '../shared/component/card-viewer/card-viewer.component';
@@ -15,20 +15,20 @@ export const routes: Routes = [
 				component: CardSetListComponent,
 			},
 			{
-				path: 'glory/:set',
+				path: 'conspiracy',
+				component: ConspiracyListComponent,
+			},
+			{
+				path: ':set',
 				component: GloryCardListComponent,
 				pathMatch: 'full'
 			},
-			{
-				path: 'glory/:set/:id',
-				component: CardViewerComponent,
-				pathMatch: 'full'
-			},
-			{
-				path: 'friend-or-foe',
-				component: FriendFoeCardListComponent,
-			}
 		]
+	},
+	{
+		path: 'card/:set/:id',
+		component: CardViewerComponent,
+		pathMatch: 'full'
 	},
 	{
 		path: 'glossary',

@@ -5,4 +5,5 @@ export enum CardTypes {
 	CREATURE = 4,
 	ARTIFACT = 5,
 	PLANESWALKER = 6,
+	CONSPIRACY = 7,
 }

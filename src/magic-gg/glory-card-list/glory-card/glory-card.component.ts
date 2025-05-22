@@ -22,7 +22,7 @@ export class GloryCardComponent {
 
 	public goToCardDetails(): void {
 		const cardId = this.cardToBeDisplayed.sets.find(cardSet => cardSet.set === this.cardSetBeingDisplayed.toLocaleUpperCase())?.cardId;
-		this.router.navigate(['card-list', 'glory', this.cardSetBeingDisplayed, cardId]);
+		this.router.navigate(['card', this.cardSetBeingDisplayed, cardId]);
 	}
 
 }

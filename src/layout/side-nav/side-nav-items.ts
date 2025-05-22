@@ -11,14 +11,14 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
 		url: '/'
 	},
 	{
-		text: 'Lista de cartas \'Glory\'',
+		text: 'Lista de sets \'Glory\'',
 		icon: 'receipt_long',
 		url: 'card-list/glory'
 	},
 	{
-		text: 'Lista de cartas \'Friend Or Foe\'',
+		text: 'Lista de sets \'Conspiracy\'',
 		icon: 'contact_page',
-		url: 'card-list/friend-or-foe'
+		url: 'card-list/conspiracy'
 	},
 	{
 		text: 'Glossário',

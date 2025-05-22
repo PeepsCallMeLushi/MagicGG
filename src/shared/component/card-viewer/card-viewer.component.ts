@@ -1,13 +1,14 @@
 import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CONSPIRACY_GLORY_1_SET_LIST } from '../../../magic-gg/conspiracy-card-list/conspiracy_glory_1_set_list';
 import { MAGIC_GLORY_1_SET_LIST } from '../../../magic-gg/glory-card-list/magic_glory_1_set_list';
+import { CardRarity } from '../../enum/card-rarity';
 import { CardSet } from '../../enum/card-set';
-import { GloryCard } from '../../models/glory-card.model';
+import { CardSubTypes } from '../../enum/card-sub-types';
 import { CardSuperTypes } from '../../enum/card-super-types';
 import { CardTypes } from '../../enum/card-types';
-import { CardSubTypes } from '../../enum/card-sub-types';
-import { CardRarity } from '../../enum/card-rarity';
+import { GloryCard } from '../../models/glory-card.model';
 
 @Component({
 	selector: 'app-card-viewer',
@@ -35,6 +36,7 @@ export class CardViewerComponent implements OnInit {
 
 	private getCardToDisplay(): void {
 		const setlist = this.getCardSet();
+		console.log(setlist);
 		if (setlist.length > 0) {
 			const cardToGet = this.acRoute.snapshot.paramMap.get('id') ? this.acRoute.snapshot.paramMap.get('id') : 0;
 			const setToGet = this.acRoute.snapshot.paramMap.get('set')?.toUpperCase();
@@ -77,6 +79,8 @@ export class CardViewerComponent implements OnInit {
 		switch(expansion) {
 			case CardSet.MAGIC_GLORY_1:
 				return 'Magic Glory 1';
+			case CardSet.CONSPIRACY_GLORY_1:
+				return 'Conspiracy Glory 1';
 			default:
 				return '';
 		}
@@ -124,6 +128,8 @@ export class CardViewerComponent implements OnInit {
 				return 'Artifact';
 			case CardTypes.PLANESWALKER:
 				return 'Planeswalker';
+			case CardTypes.CONSPIRACY:
+				return 'Conspiracy';
 			default:
 				return '';
 		}
@@ -145,6 +151,8 @@ export class CardViewerComponent implements OnInit {
 				return 'Equipment';
 			case CardSubTypes.THE_HONOURED_ONE:
 				return 'The Honoured One';
+			case CardSubTypes.SINGLE_USE:
+				return 'Single Use';
 			default:
 				return '';
 		}
@@ -155,6 +163,8 @@ export class CardViewerComponent implements OnInit {
 		switch (setToGet?.toUpperCase()) {
 			case CardSet.MAGIC_GLORY_1:
 				return MAGIC_GLORY_1_SET_LIST;
+			case CardSet.CONSPIRACY_GLORY_1:
+				return CONSPIRACY_GLORY_1_SET_LIST;
 			default:
 				return [];
 		}

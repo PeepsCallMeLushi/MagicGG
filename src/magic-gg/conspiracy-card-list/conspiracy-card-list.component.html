@@ -1,0 +1,7 @@
+<div class="card-list-container">
+	@for (setItem of conspiracySetList; track $index) {
+		<app-set-item
+				[setToDisplay]="setItem">
+		</app-set-item>
+	}
+</div>

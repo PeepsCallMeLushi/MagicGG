@@ -78,7 +78,7 @@
 					{{ expansion }}
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" *ngIf="rarity !== ''">
 				<div class="col-4 attribute-name">
 					Rarity
 				</div>
@@ -106,4 +106,13 @@
 			</div>
 		}
 	</div>
+</div>
+
+<div class="no-set-message" *ngIf="!cardExists">
+	<span>
+		<i>
+			Glory card not found. <br>
+			Try searching for another card.
+		</i>
+	</span>
 </div>

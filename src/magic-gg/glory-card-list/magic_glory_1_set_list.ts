@@ -680,7 +680,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.SORCERY,
 		],
 		[],
-		'Choose Left, Right or Diagonal. If left or right were chosen, each player rotates seats to the chosen direction, they take their Glory and Nemesis cards with them.<br>If Diagonal was chosen, the same happens but the players change with the player to their diagonal instead of rotating.',
+		'Choose Left, Right or Diagonal. If left or right were chosen, each player rotates seats to the chosen direction, they take their Glory, Conspiracy and FriendOrFoe cards with them.<br>If Diagonal was chosen, the same happens but the players change with the player to their diagonal instead of rotating.',
 		'https://mtg.design/i/gxep44.jpg',
 	),
 	new GloryCard(
@@ -939,13 +939,17 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Death or Rebirth, then those votes are revealed<br>If Rebirth gets more votes, each player sacrifices all of their creatures.Each player creates a copy token of all nontoken creatures sacrificed this way, except they aren\'t legendary if they were legendary and are spirits in addition to their other types.<br>If Death gets more votes, or is tied for more votes, all creatures are sacrificed.',
+		+ 'Each Player secretly votes for Death or Rebirth, then those votes are revealed<br>If Rebirth gets more votes, each player sacrifices all of their creatures. Each player creates a copy token of all nontoken creatures sacrificed this way. The tokens aren\'t legendary if the sacrificed creatures were legendary.The tokens are spirits in addition to the sacrificed creature\'s types.<br>If Death gets more votes, or is tied for more votes, all creatures are sacrificed.',
 		'https://mtg.design/i/mmxx56.jpg',
 		'',
 		'',
 		'',
 		[
 			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			'If Rebirth gets more votes, Council of Death and Rebirth creates copies of nontoken creatures that were sacrificed with its effect.',
+			'If Rebirth gets more votes, each player creates a copy token of all nontoken creatures sacrificed with Council of Death and Rebirth.',
+			'If Rebirth gets more votes, the copy tokens created by Council of Death and Rebirth lose Legendary if they were legends.',
+			'If Rebirth gets more votes, the copy tokens created by Council of Death and Rebirth are spirits in addition to their other types. A Goblin Coward becomes a Goblin Coward Spirit',
 		]
 	),
 	new GloryCard(
@@ -975,7 +979,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Fame or Fortune, then those votes are revealed.<br>If Fame gets more votes, each player casts their commander for free, the cast resolution cannot be prevented in any way, and commander tax isn\'t accumulated. For each commander that was already on the battlefield, they gain Vigilance, Reach, First strike and trample, their base power and thoughness are set to 10.<br>If Fortune gets more votes or is tied for more votes, each player gets a gold token equal to the total commander tax of the table.',
+		+ 'Each Player secretly votes for Fame or Fortune, then those votes are revealed.<br>If Fame gets more votes, each player casts their commander for free, the cast resolution cannot be prevented in any way, and commander tax isn\'t accumulated. For each commander that was already on the battlefield, they gain Vigilance, Reach, First strike and trample, their base power and toughness are set to 10.<br>If Fortune gets more votes or is tied for more votes, each player gets a gold token equal to the total commander tax of the table.',
 		'https://mtg.design/i/vglq18.jpg',
 		'',
 		'',
@@ -1673,13 +1677,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.THE_HONOURED_ONE
 		],
-		'When you would create one or more tokens, cast a spell with two or more different colored mana symbols in its cost, deal non combat,  draw one or more cards or discard one or more cards, also add a loyalty counter to The Honoured One.<br><br>+1: Scry  2. Draw 3 cards. Discard 1 Glory card. If you can\'t discard, double The Honoured One\'s loyalty counters instead.<br><br>-20: You get an emblem with "Choose a commander that you own in any public area. Creatures you control enters the battlefield as 5/5 copies of the that commander, except it isn\'t legendary.The copy gains Flying, Double strike, Hexproof, Menace, Haste and Trample."',
+		'When you would create one or more tokens, cast a spell with two or more different colored mana symbols in its cost, deal noncombat damage,  draw one or more cards or discard one or more cards, also add a loyalty counter to The Honoured One.<br><br>+1: Scry  2. Draw 3 cards. Discard 1 Glory card. If you can\'t discard, double The Honoured One\'s loyalty counters instead.<br><br>-20: You get an emblem with "Choose a commander that you own in any public area. Creatures you control enters the battlefield as 5/5 copies of the that commander, except it isn\'t legendary.The copy gains Flying, Double strike, Hexproof, Menace, Haste and Trample."',
 		'https://mtg.design/i/vjxt17.jpg',
 		'',
 		'',
 		'',
 		[
-			'Whenever you would create one or more tokens, you create that many tokens and add one loyalty counter to The Honoured One. Repeat this for whenever you would cast a spell with two or more different colored mana symbols in its cost, whenever you would draw one or more cards and whenever you would discard one or more cards.',
+			'Whenever you would create one or more tokens, you create that many tokens and add one loyalty counter to The Honoured One. Repeat this for whenever you would cast a spell with two or more different colored mana symbols in its cost, whenever you would deal noncombat damage, whenever you would draw one or more cards and whenever you would discard one or more cards.',
 			'Casting a spell with two or more different colored mana symbols in its cost means casting a spell who\'se mana symbols are at least of two different colors. For example <i class="ms ms-r ms-cost ms-shadow"></i><i class="ms ms-u ms-cost ms-shadow"></i><i class="ms ms-u ms-cost ms-shadow"></i>.',
 			'When resolving the +1 ability, if you cannot discard Glory cards for any reason, you double the amount of Loyalty counters on The Honoured One instead.',
 		],

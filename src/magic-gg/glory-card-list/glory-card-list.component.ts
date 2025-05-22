@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { GloryCard } from '../../shared/models/glory-card.model';
 import { CardSet } from '../../shared/enum/card-set';
 import { NgIf } from '@angular/common';
+import { CONSPIRACY_GLORY_1_SET_LIST } from '../conspiracy-card-list/conspiracy_glory_1_set_list';
 
 @Component({
 	selector: 'app-glory-card-list',
@@ -36,6 +37,10 @@ export class GloryCardListComponent implements OnInit {
 			case CardSet.MAGIC_GLORY_1:
 				this.cardList = MAGIC_GLORY_1_SET_LIST;
 				this.cardSetList = CardSet.MAGIC_GLORY_1;
+				break;
+			case CardSet.CONSPIRACY_GLORY_1:
+				this.cardList = CONSPIRACY_GLORY_1_SET_LIST;
+				this.cardSetList = CardSet.CONSPIRACY_GLORY_1;
 				break;
 			default:
 				this.cardList = [];

@@ -24,7 +24,7 @@ export class SetItemComponent {
 	constructor(private router: Router) {}
 
 	public goToSetDetails(): void {
-		this.router.navigate(['card-list', 'glory', this.setToDisplay.setAbbr]);
+		this.router.navigate(['card-list', this.setToDisplay.setAbbr]);
 	}
 
 

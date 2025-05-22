@@ -6,4 +6,6 @@ export enum CardSubTypes {
 	COWARD = 5,
 	EQUIPMENT = 6,
 	THE_HONOURED_ONE = 7,
+	SINGLE_USE = 8,
+	REUSABLE = 9,
 }
