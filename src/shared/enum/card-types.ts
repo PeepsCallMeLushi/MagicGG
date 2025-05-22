@@ -1,0 +1,8 @@
+export enum CardTypes {
+	INSTANT = 1,
+	ENCHANTMENT = 2,
+	SORCERY = 3,
+	CREATURE = 4,
+	ARTIFACT = 5,
+	PLANESWALKER = 6,
+}

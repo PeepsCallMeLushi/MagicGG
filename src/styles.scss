@@ -21,3 +21,131 @@ body {
 .margin-bottom-10 {
 	margin-bottom: 10px;
 }
+
+.margin-top-5 {
+	margin-top: 5px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.card-image {
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+	border-radius: 32px;
+}
+
+.attribute-name {
+	padding: 12px;
+	border: 2px solid black;
+	border-right: 1px solid black;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	min-height: 48px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	background-color: #141414;
+}
+
+.attribute-value {
+	padding: 12px;
+	border: 2px solid black;
+	border-left: 1px solid black;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	min-height: 48px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #212525;
+	text-align: left;
+}
+
+.ruling-title {
+	padding: 12px;
+	border: 2px solid black;
+	border-bottom: 1px solid black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	min-height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #141414;
+}
+
+.ruling-value {
+	padding: 12px;
+	border: 2px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	min-height: 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #212525;
+	text-align: left;
+
+	&:last-of-type {
+		border-bottom: 2px solid black;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		margin-bottom: 10px;
+	}
+}
+
+.card-list-container {
+	max-width: 1080px;
+	margin: 0px auto;
+}
+
+.no-set-message {
+	height: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 64px;
+}
+
+.glory-card-container {
+	width: 250px;
+	height: 346.13px;
+	display: inline-block !important;
+	margin: 10px;
+
+	mat-card-title {
+		height: 30px;
+	}
+
+	span {
+		z-index: 1000;
+		position: relative;
+		color: transparent;
+		font-size: 14px;
+	}
+
+	img {
+		position: absolute;
+		width: 250px;
+		top: 0px;
+		left: 0px;
+		border-radius: 16px;
+	}
+}
+
+.set-item-card-container {
+	width: 250px;
+	display: inline-block !important;
+	margin: 10px;
+	text-align: left;
+
+	mat-card-title {
+		height: 30px;
+	}
+}

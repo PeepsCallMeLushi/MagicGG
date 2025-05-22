@@ -1,0 +1,16 @@
+<mat-card class="set-item-card-container">
+	<mat-card-header>
+		<mat-card-title>
+			{{ setToDisplay.setName }}
+		</mat-card-title>
+		<mat-card-subtitle>
+			Set size: {{ setToDisplay.setSize }}
+		</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-content></mat-card-content>
+	<mat-card-actions [align]="'end'">
+		<button mat-button (click)="goToSetDetails()">
+			Open Set
+		</button>
+	</mat-card-actions>
+</mat-card>

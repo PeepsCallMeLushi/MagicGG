@@ -1,0 +1,109 @@
+<div class="container" *ngIf="cardExists">
+	<div class="row">
+		<div class="col-md-6 col-12 margin-bottom-10">
+			<img class="card-image" [src]="cardToDisplay.imgURL">
+		</div>
+		<div class="col-md-6 col-12">
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Card Name
+				</div>
+				<div class="col-8 attribute-value">
+					{{ cardToDisplay.cardName }}
+				</div>
+			</div>
+			<div class="row" *ngIf="cardToDisplay.cardColors.length > 0">
+				<div class="col-4 attribute-name">
+					Color Identity
+				</div>
+				<div class="col-8 attribute-value">
+					@for (colorIdent of cardToDisplay.cardColors; track $index) {
+						<span [innerHTML]="colorIdent"></span>
+					}
+				</div>
+			</div>
+			<div class="row" *ngIf="cardToDisplay.cardCost !== ''">
+				<div class="col-4 attribute-name">
+					Mana Cost
+				</div>
+				<div class="col-8 attribute-value">
+					<span [innerHTML]="cardToDisplay.cardCost"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Types
+				</div>
+				<div class="col-8 attribute-value">
+					{{ cardTypes }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Effect
+				</div>
+				<div class="col-8 attribute-value">
+					<span [innerHTML]="cardToDisplay.cardEffect"></span>
+				</div>
+			</div>
+			<div class="row" *ngIf="cardToDisplay.loyaltyCounters > 0">
+				<div class="col-4 attribute-name">
+					Loyalty
+				</div>
+				<div class="col-8 attribute-value">
+					{{ cardToDisplay.loyaltyCounters }}
+				</div>
+			</div>
+			<div class="row" *ngIf="cardToDisplay.flavourText !== ''">
+				<div class="col-4 attribute-name">
+					Flavour Text
+				</div>
+				<div class="col-8 attribute-value">
+					<i><span [innerHTML]="cardToDisplay.flavourText"></span></i>
+				</div>
+			</div>
+			<div class="row" *ngIf="cardToDisplay.power !== '' && cardToDisplay.toughness !== ''">
+				<div class="col-4 attribute-name">
+					Power / Toughness
+				</div>
+				<div class="col-8 attribute-value">
+					{{ cardToDisplay.power }} / {{ cardToDisplay.toughness }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Expansion
+				</div>
+				<div class="col-8 attribute-value">
+					{{ expansion }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Rarity
+				</div>
+				<div class="col-8 attribute-value">
+					{{ rarity }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Card number
+				</div>
+				<div class="col-8 attribute-value">
+					{{ cardNumber }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row margin-top-5" *ngIf="cardToDisplay.rulings.length > 0">
+		<div class="ruling-title">
+			Rulings
+		</div>
+		@for (ruling of cardToDisplay.rulings; track $index) {
+			<div class="col-12 ruling-value">
+				<span [innerHTML]="ruling"></span>
+			</div>
+		}
+	</div>
+</div>

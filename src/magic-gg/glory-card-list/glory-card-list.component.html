@@ -1,7 +1,17 @@
-<div class="card-list-container">
+<div class="card-list-container" *ngIf="cardSetFound">
 	@for (card of cardList; track $index) {
 		<app-glory-card
-				[cardToBeDisplayed]="card">
+				[cardToBeDisplayed]="card"
+				[cardSetBeingDisplayed]="cardSetList">
 		</app-glory-card>
 	}
+</div>
+
+<div class="no-set-message" *ngIf="!cardSetFound">
+	<span>
+		<i>
+			Glory card set not found. <br>
+			Try searching for another set.
+		</i>
+	</span>
 </div>
