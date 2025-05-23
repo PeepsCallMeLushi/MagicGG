@@ -1015,14 +1015,14 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Feast or Famine, then those votes are revealed.<br>If Feast gets more votes, each player selects a creature to fight a creature from the next player in turn order.Each creature can only start a fight once.Repeat this process until every creature has started a fight once.If the next player in turn order doesn\'t have any creatures, select a creature from the next player.<br>If Famine gets more votes, or is tied for more votes, put a stun counter on every creature equal to the number of players in the table.',
+		+ 'Each Player secretly votes for Feast or Famine, then those votes are revealed.<br>If Feast gets more votes, each player chooses a creature they control and a creature they don\'t control.Those creatures fight.Each creature can only be chosen by their controller once.Repeat this process until every creature has been chosen by its controler.If a creature died as a result of a fight, each player creates a food token.<br>If Famine gets more more votes, or is tied for more votes, destroy all foods.',
 		'https://mtg.design/i/ulnu98.jpg',
 		'',
 		'',
 		'',
 		[
 			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
-			'This effect starts resolving with the player whose turn it is.'
+			'First the player whose turn it is chooses which creatures two creatures to fight, those creatures fight, then each other player in turn order does the same. Each player will select only two creatures at a time and then pass the choice to the next player in turn order. Repeat this untill every creature still on the battlefield has been chosen by their controller at least once. After that each player creates a number of food tokens equal to the total number of creatures that died.'
 		]
 	),
 	new GloryCard(
@@ -1052,7 +1052,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Hearth or Home, then those votes are revealed.<br>If Hearth gets more votes, each player may sacrifice a creature of their choice.Each player who did creates a food token.Then each player can put on the battlefield tapped a number of lands equal to the greatest power or toughness amongst all creatures on the battlefield.<br>If Home gets more votes, or is tied for more votes, each player must exile all creatures they control, then return those cards to the battlefield under their owner\'s control.',
+		+ 'Each Player secretly votes for Hearth or Home, then those votes are revealed.<br>If Hearth gets more votes, each player may sacrifice any number of creatures. Create a Wastes token per creature sacrificed this way. Then each player can put on the battlefield tapped a number of lands equal to the greatest power or toughness amongst all creatures on the battlefield.<br>If Home gets more votes, or is tied for more votes, each player must exile all creatures they control, then return those cards to the battlefield under their owner\'s control.',
 		'https://mtg.design/i/ojns94.jpg',
 		'',
 		'',
@@ -1060,7 +1060,8 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
 			'This effect starts resolving with the player whose turn it is.',
-			'The number of tapped lands put on the battlefield is equal to the greatest power or toughness amongst all creatures on the battlefield, whichever value is the greatest.'
+			'The number of tapped lands put on the battlefield is equal to the greatest power or toughness amongst all creatures on the battlefield, whichever value is the greatest.',
+			'Council of Hearth and Home creates a token that\'s a copy of the card <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> in the Oracle card reference. Official text for <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> can be found using the Gatherer card database at Gatherer.Wizards.com.'
 		]
 	),
 	new GloryCard(
@@ -1090,7 +1091,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Luck or Skill, then those votes are revealed.<br>If Luck gets more votes, you flip a coin for each permanent on the battlefield, if heads you create a token copy of it, if tails, the permanent\'s control sacrifices it.<br>If Skill gets more votes, or is tied for more votes, each player sacrifices a permanent, then for each opponent that player creates a token of the sacrificed permanent.',
+		+ 'Each Player secretly votes for Luck or Skill, then those votes are revealed.<br>If Luck gets more votes, you flip a coin for each permanent on the battlefield, if it comes up heads you create a token that\'s a copy of it, if it comes up tails, its controller sacrifices it.<br>If Skill gets more votes, or is tied for more votes, each player sacrifices a permanent, then for each opponent that player creates a token of the sacrificed permanent.',
 		'https://mtg.design/i/jsvp73.jpg',
 		'',
 		'',
@@ -1128,7 +1129,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for Truth or Justice, then those votes are revealed.<br>If Truth gets more votes, Each player discards their hand, then draws cards equal to thetotal number of cards discarded this way.<br>If Justice gets more votes, or is tied for more votes, each player sacrifices permanents of each type until every player has the same number of permanents of each type, then all life totals are set to the lowest life total.',
+		+ 'Each Player secretly votes for Truth or Justice, then those votes are revealed.<br>If Truth gets more votes, Each player discards their hand, then draws cards equal to thetotal number of cards discarded this way.<br>If Justice gets more votes, or is tied for more votes, each player chooses a number of creatures they control equal to the number of creatures controlled by the player who controls the fewest, then sacrifices the rest. Repeat this process for Artifacts and Enchantments.',
 		'https://mtg.design/i/kqla19.jpg',
 		'',
 		'',
@@ -1136,7 +1137,8 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
 			'This effect starts resolving with the player whose turn it is.',
-			'If Justice is resolved, and a player has no permanent of any given type that another player has, then the player who has those permanents needs to sacrifice all of them.'
+			'If Justice is voted, First the player whose turn it is chooses which creatures (if any) to keep, then each other player in turn order does the same. Each player will know the choices made by the players who chose before them. All of the unchosen creatures are then sacrificed simultaneously. The process is repeated for artifacts and then enchantments, one at the time. Players will again know earlier choices made when deciding what to sacrifice.',
+			'Each type of object is counted during the corresponding part of the process. Enchantments on the battlefield are counted after Creatures have been sacrificed, and Enchantments on the battlefield are counted after Artifacts have been sacrificed. Thus, an Artifact Creature or Enchantment Creature sacrificed to the first part of the spell would not be counted when determining how many Artifacts or Enchantments are on the battlefield for next parts of the spell.'
 		]
 	),
 	new GloryCard(
@@ -1166,7 +1168,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		],
 		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
 		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
-		+ 'Each Player secretly votes for War or Peace, then those votes are revealed.<br>If War gets more votes, put a goad counter on each artifact, enchantment and creature on the battlefield. <i>(Permanents with goad counters cannot attack the player to their controller\'s right and are X/X Creatures in addition to their other type if they weren\'t, where X is their mana cost.)</i><br>If Peace gets more votes, or is tied for more votes, creatures can\'t attack until the next turn, then each player gives a permanent of their choice to the player to their right.',
+		+ 'Each Player secretly votes for War or Peace, then those votes are revealed.<br>If War gets more votes, put a goad counter on each artifact, enchantment and creature on the battlefield. <i>(Permanents with goad counters cannot attack the player to their controller\'s right and are X/X Creatures in addition to their other type if they weren\'t, where X is their mana value.)</i><br>If Peace gets more votes, or is tied for more votes, creatures can\'t attack until the next turn, then each player gives a permanent of their choice to the player to their right.',
 		'https://mtg.design/i/vcvi60.jpg',
 		'',
 		'',
@@ -1202,7 +1204,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Target creature gains a Deathtouch counter.<br><br>Until the end of the turn:<ul><li>If that creature deals lethal damage to any other creature, draw two cards;</li><li>If that creature causes an opponent to lose the game, scry 3 then draw 2;</li><li>Creatures with Deathtouch have Toxic 1.</li></ul>',
+		'Target creature gains a Deathtouch counter.<br><br>Until the end of this turn:<ul><li>Whenever a creature dealt damage by this creature dies, draw two cards;</li><li>Whenever a player dealt damage by this creature loses the game, scry 3 then draw 2;</li><li>Creatures with Deathtouch have Toxic 1.</li></ul>',
 		'https://mtg.design/i/tbzw00.jpg',
 		'"I\'ve had something up my sleeve"',
 		'',
@@ -1233,7 +1235,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Target creature gains a Deathtouch counter.<br>Until the end of the turn, creatures with deathtouch dealing combat damage to players, cause those players to lose half of their life rounded up instead.<br>If a card named "Critical Hit" or "Criticalest Hit" has resolved this turn before this card resolves, creatures with deathtouch dealing combat damage to players cause those players to lose the game.',
+		'Target creature gains a Deathtouch counter.<br>Until the end of the turn, creatures with deathtouch dealing combat damage to players, cause those players to lose half of their life rounded up instead.<br>If you\'ve cast another spell named Critical Hit this turn, creatures with deathtouch dealing combat damage to players cause those players to lose the game.',
 		'https://mtg.design/i/pbkw58.jpg',
 		'',
 		'',
@@ -1343,7 +1345,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 				CardRarity.COMMON,
 			)
 		],
-		'It\'s a Miracle',
+		'It\'s a "Miracle!"',
 		'',
 		[
 			CardColors.WHITE,
@@ -1359,13 +1361,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.SORCERY,
 		],
 		[],
-		'You may cast It\'s a Miracle as though it had flash.<br>If you do the copy gains haste and sacrifice it at the beginning of the next end step.<br><br>Copy target permanent.<br>The copy is a token, except the token isn\'t legendary if the copied permanent is Legendary, its name is "Miracle!" and the following effect in addition to the effects it copied:<br>"When it enters you lose half your life rounded up, if your life is less than 20 afterwards, you lose the game. This copy has Vanishing 3, Vigilance, Reach, Trample and Protection from Everything as long as it is being represented on a drawing or on a dry-erase card <i>(e.g. an Inifitoken)</i> and if the original card I\'m copying would leave the battle field while I\'m on the battlefield, gain control of it instead."',
+		'Copy target permanent.<br>The copy is a token, except the token isn\'t legendary if the copied permanent is Legendary, its name is "Miracle!" and the following effect in addition to the effects it copied:<br>"When it enters you lose half your life rounded up, if your life is less than 20 afterwards, you lose the game. This copy has Vanishing 3, Vigilance, Reach, Trample and Protection from Everything as long as it is being represented on a drawing or on a dry-erase card <i>(e.g. an Inifitoken)</i> and if the original card I\'m copying would leave the battle field while I\'m on the battlefield, gain control of it instead."<br><br>You may cast It\'s a "Miracle!" as though it had flash.<br>If you do "Miracle!" gains haste and sacrifice it at the beginning of the next end step.',
 		'https://mtg.design/i/kvea63.jpg',
 		'"JESUS! CHRIST!" - Jesus Christ, probably.',
 		'',
 		'',
 		[
-			'If It\'s a Miracle is cast as though it had flash, the token copy and any copies of the copy gain haste and are sacrificed at the beginning of the next endstep.',
+			'If It\'s a "Miracle!" is cast as though it had flash, the token copy and any copies of the copy gain haste and are sacrificed at the beginning of the next endstep.',
 			'The copy retains all the types of the original\'s types.',
 			'The copy isn\'t legendary if it was legendary and the token\'s name is "Miracle!".',
 			'When the copy token enters you lose half your life rounded up, and if your life total is 20 or lower due to this effect, you lose the game.',
@@ -1641,15 +1643,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br>Drain 5 Life from each opponent who has the most or tied for most:<ul><li>Cards in hand;</li><li>Life total;</li><li>Permanents on their battlefield;</li><li>Cards in their graveyard.</li></ul>Also Drain 5 Life from each opponent who has the least or tied for least:<ul><li>Commander tax between individual commanders;</li><li>Cards in their graveyard.</li></ul>',
+		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br>Opponents who have the most or tied for most cards in hand, life total, permanents on their battlefield, and/or cards in their graveyard, lose 5 life each.<br>Opponent who has the least or tied for least commander tax between individual commanders and / or cards in their graveyard, lose 5 life each.<br>You gain life equal to the life lost this way.',
 		'https://mtg.design/i/bslb25.jpg',
 		'"Woop-woop, that\'s the sound of da beast"',
 		'',
 		'',
 		[
-			'Each criteria is counted individually, meaning that if the same opponent matches 2 or more criteria then they\'re drained for 5 life times the amount of times they match the criteria. For example, if a singular opponent is simultaneously the opponent with the most life total, least cards in their graveyard and the most permanents on the battlefield, then that opponent will be drained 15 total life.',
+			'Each criteria is counted individually, meaning that if the same opponent matches 2 or more criteria then they lose 5 life times the amount of times they match the criteria. For example, if a singular opponent is simultaneously the opponent with the most life total, least cards in their graveyard and the most permanents on the battlefield, then that opponent will lose 15 total life.',
 			'In cases where players are playing with multiple commanders in the commandzone <i>(e.g. Partners)</i> each commander tax is counted individually towards the effect of That\'s the sound of the Police.',
-			'If two or more opponents are tied for the same mode, drain 5 life from both of the opponents.'
+			'If two or more opponents are tied for the same mode, both opponents lose 5 life.'
 		]
 	),
 	new GloryCard(
@@ -1677,7 +1679,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.THE_HONOURED_ONE
 		],
-		'When you would create one or more tokens, cast a spell with two or more different colored mana symbols in its cost, deal noncombat damage,  draw one or more cards or discard one or more cards, also add a loyalty counter to The Honoured One.<br><br>+1: Scry  2. Draw 3 cards. Discard 1 Glory card. If you can\'t discard, double The Honoured One\'s loyalty counters instead.<br><br>-20: You get an emblem with "Choose a commander that you own in any public area. Creatures you control enters the battlefield as 5/5 copies of the that commander, except it isn\'t legendary.The copy gains Flying, Double strike, Hexproof, Menace, Haste and Trample."',
+		'When you would create one or more tokens, cast a spell with two or more different colored mana symbols in its cost, deal noncombat damage, draw one or more cards or discard one or more cards, also add a loyalty counter to The Honoured One.<br><br>+1: Scry  2. Draw 3 cards. Discard 1 Glory card. If you can\'t discard, double The Honoured One\'s loyalty counters instead.<br><br>-20: You get an emblem with "Choose a commander that you own in the command zone, battlefield, exile or graveyard. Your creatures enter as 5/5 copies of the that commander, except it isn\'t legendary.The copy gains Flying, Double strike, Hexproof, Menace, Haste and is a creature in addition to its other types."',
 		'https://mtg.design/i/vjxt17.jpg',
 		'',
 		'',

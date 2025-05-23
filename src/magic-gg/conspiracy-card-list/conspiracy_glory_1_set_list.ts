@@ -594,7 +594,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'Everyone who had their designated Friend and Foe arguing or debating with each other while both are in the same multiplayer game <b>Roll 2d6</b>.',
 		'https://mtg.design/i/awsz52.jpg',
@@ -622,7 +622,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'If you didn\'t win any multiplayer game today <b> Roll 2d6 </b>.<br>If the result of at least one of the dice is a 6 or both dice produced the same result, repeat this process.<br>Everytime you resolve this effect, everyone else who didn\'t win a single multiplayer game today <b>Moves 1</b>.<br>Every time you rolled 6 dice this way, reset the count and move BACK to the start, and everyone else who didn\'t also win a game <b>Moves 2 BACK</b>.',
 		'https://mtg.design/i/nzna33.jpg',
@@ -650,7 +650,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'<b>Roll 3d6</b> per End of Day Conspiracies resolved before this one.<br>You get an extra Roll for each result that is even.Extra rolls do not generate other extra rolls.<br>The last player on the board gets an extra roll for each result that is odd.You cannot be the last player.Check who is the last player besides you after each odd result.',
 		'https://mtg.design/i/zfvp75.jpg',
@@ -672,7 +672,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'If someone said any of the following phrases or phrases with similar meanings, during a multiplayer game:<ul><li>"Sempre a mim!"</li><li>"Porquê eu!?"</li><li>Não é assim tão mau" / "Podia ser pior"</li></ul><b>Roll 2d6</b> per phrase said, once per phrase.<br>The first placed player <b>Moves X BACK</b> where X is half of the amount you moved rounded up, if you\'re the first placed player, the second placed player <b>Moves X BACK</b> instead.',
 		'https://mtg.design/i/gmqa97.jpg',
@@ -694,7 +694,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'If someone said any of the following phrases or phrases with similar meanings, during a multiplayer game:<ul><li>"Such a potato play!"</li><li>"Best day ever!"</li><li>"Só vim ver a bola"</li></ul><b>Roll 2d6</b> per phrase said, once per phrase.<br>The last placed player <b>Moves X</b> where X is half of the amount you moved rounded up, if you\'re the last placed player, move twice that amount instead.',
 		'https://mtg.design/i/wjoy46.jpg',
@@ -716,7 +716,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			CardSubTypes.END_OF_DAY
 		],
 		'During a multiplayer game, if a Player got roasted/bullied by their own designated Friend while that Player was talking seriously or explaining something.<br>That friend <b>Moves 3</b>, the player who got roasted / bullied <b>Moves 5</b>, you <b>Roll a d6</b> per player roasted / bullied by their designated Friend.',
 		'https://mtg.design/i/qmpb20.jpg',

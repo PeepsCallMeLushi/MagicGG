@@ -8,4 +8,7 @@ export enum CardSubTypes {
 	THE_HONOURED_ONE = 7,
 	SINGLE_USE = 8,
 	REUSABLE = 9,
+	END_OF_DAY = 10,
+	FRIEND = 11,
+	FOE = 12,
 }

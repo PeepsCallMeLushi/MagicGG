@@ -6,6 +6,7 @@ import { GloryCard } from '../../shared/models/glory-card.model';
 import { CardSet } from '../../shared/enum/card-set';
 import { NgIf } from '@angular/common';
 import { CONSPIRACY_GLORY_1_SET_LIST } from '../conspiracy-card-list/conspiracy_glory_1_set_list';
+import { FRIEND_OR_FOE_1_SET_LIST } from '../conspiracy-card-list/friend_or_foe_1_set_list';
 
 @Component({
 	selector: 'app-glory-card-list',
@@ -41,6 +42,10 @@ export class GloryCardListComponent implements OnInit {
 			case CardSet.CONSPIRACY_GLORY_1:
 				this.cardList = CONSPIRACY_GLORY_1_SET_LIST;
 				this.cardSetList = CardSet.CONSPIRACY_GLORY_1;
+				break;
+			case CardSet.FRIEND_OR_FOE_1:
+				this.cardList = FRIEND_OR_FOE_1_SET_LIST;
+				this.cardSetList = CardSet.FRIEND_OR_FOE_1;
 				break;
 			default:
 				this.cardList = [];

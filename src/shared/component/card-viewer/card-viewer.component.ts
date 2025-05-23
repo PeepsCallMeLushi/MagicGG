@@ -9,6 +9,7 @@ import { CardSubTypes } from '../../enum/card-sub-types';
 import { CardSuperTypes } from '../../enum/card-super-types';
 import { CardTypes } from '../../enum/card-types';
 import { GloryCard } from '../../models/glory-card.model';
+import { FRIEND_OR_FOE_1_SET_LIST } from '../../../magic-gg/conspiracy-card-list/friend_or_foe_1_set_list';
 
 @Component({
 	selector: 'app-card-viewer',
@@ -81,6 +82,8 @@ export class CardViewerComponent implements OnInit {
 				return 'Magic Glory 1';
 			case CardSet.CONSPIRACY_GLORY_1:
 				return 'Conspiracy Glory 1';
+			case CardSet.FRIEND_OR_FOE_1:
+				return 'Friend or Foe 1';
 			default:
 				return '';
 		}
@@ -153,6 +156,14 @@ export class CardViewerComponent implements OnInit {
 				return 'The Honoured One';
 			case CardSubTypes.SINGLE_USE:
 				return 'Single Use';
+			case CardSubTypes.REUSABLE:
+				return 'Reusable';
+			case CardSubTypes.END_OF_DAY:
+				return 'End of Day';
+			case CardSubTypes.FRIEND:
+				return 'Friend';
+			case CardSubTypes.FOE:
+				return 'Foe';
 			default:
 				return '';
 		}
@@ -165,6 +176,8 @@ export class CardViewerComponent implements OnInit {
 				return MAGIC_GLORY_1_SET_LIST;
 			case CardSet.CONSPIRACY_GLORY_1:
 				return CONSPIRACY_GLORY_1_SET_LIST;
+			case CardSet.FRIEND_OR_FOE_1:
+				return FRIEND_OR_FOE_1_SET_LIST;
 			default:
 				return [];
 		}
