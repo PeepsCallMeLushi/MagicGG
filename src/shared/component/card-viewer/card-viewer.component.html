@@ -22,12 +22,22 @@
 					}
 				</div>
 			</div>
-			<div class="row" *ngIf="cardToDisplay.cardCost !== ''">
+			<div class="row" *ngIf="cardToDisplay.cardCost.length > 0">
 				<div class="col-4 attribute-name">
 					Mana Cost
 				</div>
 				<div class="col-8 attribute-value">
-					<span [innerHTML]="cardToDisplay.cardCost"></span>
+					@for (cost of cardToDisplay.cardCost; track $index) {
+						<span [innerHTML]="cost" *ngIf="cost !== ''"></span>
+					}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 attribute-name">
+					Mana Value
+				</div>
+				<div class="col-8 attribute-value">
+					<span> {{cardToDisplay.cardCost.length}} </span>
 				</div>
 			</div>
 			<div class="row">
@@ -35,7 +45,10 @@
 					Types
 				</div>
 				<div class="col-8 attribute-value">
-					{{ cardTypes }}
+					<span [innerHTML]="
+						cardToDisplay.superTypes.join(' ') + ' ' +
+						cardToDisplay.types.join(' ') +
+						(cardToDisplay.subTypes.length > 0 ? ' — ' + cardToDisplay.subTypes.join(' ') : '' )"></span>
 				</div>
 			</div>
 			<div class="row">

@@ -4,6 +4,8 @@ import { CardSet } from "../../shared/enum/card-set";
 import { CardSubTypes } from "../../shared/enum/card-sub-types";
 import { CardSuperTypes } from "../../shared/enum/card-super-types";
 import { CardTypes } from "../../shared/enum/card-types";
+import { CostPips } from "../../shared/enum/cost-pips";
+import { ReminderTexts } from "../../shared/enum/reminder-texts";
 import { GloryCard, SetIdRarity } from "../../shared/models/glory-card.model";
 
 export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
@@ -17,7 +19,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Golos\' Piligrimage',
-		'',
+		[],
 		[
 			CardColors.COLORLESS,
 		],
@@ -43,7 +45,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Spike\'s Meet-up',
-		'',
+		[],
 		[
 			CardColors.COLORLESS,
 		],
@@ -69,7 +71,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Ajani\'s Protection',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 		],
@@ -95,7 +97,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Teferi\'s OVER protection',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 		],
@@ -120,7 +122,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'World Balance',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 		],
@@ -145,7 +147,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Jace\'s Generosity',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 		],
@@ -171,7 +173,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Monkey See Monkey Do',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 		],
@@ -196,7 +198,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Technically I Still Don\'t Play Blue!',
-		'',
+		[],
 		[
 			CardColors.COLORLESS,
 		],
@@ -221,7 +223,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Turbulent Slit',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 		],
@@ -246,7 +248,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'2nd Breakfast',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 		],
@@ -271,7 +273,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Get them by the balls',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 		],
@@ -296,7 +298,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Powersnatch',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 		],
@@ -321,7 +323,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Profane World Balance',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 		],
@@ -346,7 +348,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Tiny Bones\' Tiny Bones',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 		],
@@ -372,7 +374,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Casino Extortion',
-		'',
+		[],
 		[
 			CardColors.RED,
 		],
@@ -397,7 +399,11 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Dockside Lackey',
-		'<i class="ms ms-2 ms-cost ms-shadow"></i><i class="ms ms-rp ms-cost ms-shadow"></i>',
+		[
+			CostPips.GENERIC_2,
+			CostPips.PHYREXIAN_RED,
+			'',
+		],
 		[
 			CardColors.RED,
 		],
@@ -427,7 +433,11 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Dockside Minion',
-		'<i class="ms ms-1 ms-cost ms-shadow"></i><i class="ms ms-rp ms-cost ms-shadow"></i><i class="ms ms-rp ms-cost ms-shadow"></i>',
+		[
+			CostPips.GENERIC_1,
+			CostPips.PHYREXIAN_RED,
+			CostPips.PHYREXIAN_RED,
+		],
 		[
 			CardColors.RED,
 		],
@@ -457,7 +467,9 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Dockside Mob Boss',
-		'<i class="ms ms-r ms-cost ms-shadow"></i>',
+		[
+			CardColors.RED,
+		],
 		[
 			CardColors.RED,
 		],
@@ -488,7 +500,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Hot wheels',
-		'',
+		[],
 		[
 			CardColors.RED,
 		],
@@ -514,7 +526,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Impulse',
-		'',
+		[],
 		[
 			CardColors.RED,
 		],
@@ -539,7 +551,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Ob Nixilis\' Impulse',
-		'',
+		[],
 		[
 			CardColors.RED,
 		],
@@ -565,7 +577,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'My name is Cabral. Pedro Álvares Cabral.',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 		],
@@ -590,7 +602,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Nissa\'s Reach',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 		],
@@ -616,7 +628,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Overwhelming Stompy',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 		],
@@ -641,7 +653,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'All is fair in ____ And War',
-		'',
+		[],
 		[
 			CardColors.RED,
 			CardColors.WHITE,
@@ -666,7 +678,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Animatou\'s Whim',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -693,7 +705,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Burgeoning Smothering Studying',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 			CardColors.WHITE,
@@ -721,7 +733,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Burgeoning Smothering Studying',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -750,7 +762,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Clown Fiesta',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -812,7 +824,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Belle and Brawl',
-		'',
+		[],
 		[
 			CardColors.RED,
 			CardColors.GREEN,
@@ -835,7 +847,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'A Beauty Token is a 1/5 white and black Human token with first strike and deathtouch.',
 			'A Ugly Beast Token is a 4/4 red and green Beast token with trample and menace.'
 		]
@@ -850,7 +862,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Body and Mind',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 			CardColors.BLUE,
@@ -873,7 +885,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 		]
 	),
 	new GloryCard(
@@ -886,7 +898,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Chaos and Order',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -909,7 +921,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 		]
 	),
 	new GloryCard(
@@ -922,7 +934,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Death and Rebirth',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLACK,
@@ -945,7 +957,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'If Rebirth gets more votes, Council of Death and Rebirth creates copies of nontoken creatures that were sacrificed with its effect.',
 			'If Rebirth gets more votes, each player creates a copy token of all nontoken creatures sacrificed with Council of Death and Rebirth.',
 			'If Rebirth gets more votes, the copy tokens created by Council of Death and Rebirth lose Legendary if they were legends.',
@@ -962,7 +974,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Fame and Fortune',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 			CardColors.RED,
@@ -985,7 +997,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 		]
 	),
 	new GloryCard(
@@ -998,7 +1010,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Feast and Famine',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 			CardColors.GREEN,
@@ -1021,7 +1033,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'First the player whose turn it is chooses which creatures two creatures to fight, those creatures fight, then each other player in turn order does the same. Each player will select only two creatures at a time and then pass the choice to the next player in turn order. Repeat this untill every creature still on the battlefield has been chosen by their controller at least once. After that each player creates a number of food tokens equal to the total number of creatures that died.'
 		]
 	),
@@ -1035,7 +1047,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Hearth and Home',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 			CardColors.WHITE,
@@ -1058,7 +1070,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'This effect starts resolving with the player whose turn it is.',
 			'The number of tapped lands put on the battlefield is equal to the greatest power or toughness amongst all creatures on the battlefield, whichever value is the greatest.',
 			'Council of Hearth and Home creates a token that\'s a copy of the card <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> in the Oracle card reference. Official text for <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> can be found using the Gatherer card database at Gatherer.Wizards.com.'
@@ -1074,7 +1086,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Luck and Skill',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.RED,
@@ -1097,7 +1109,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'This effect starts resolving with the player whose turn it is.',
 			'If Skill is resolved, then each player sacrifices a permament, then creates an ammount of token copies of that permanent equal to the ammount of opponents that player has.'
 		]
@@ -1112,7 +1124,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of Truth and Justice',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -1135,7 +1147,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'This effect starts resolving with the player whose turn it is.',
 			'If Justice is voted, First the player whose turn it is chooses which creatures (if any) to keep, then each other player in turn order does the same. Each player will know the choices made by the players who chose before them. All of the unchosen creatures are then sacrificed simultaneously. The process is repeated for artifacts and then enchantments, one at the time. Players will again know earlier choices made when deciding what to sacrifice.',
 			'Each type of object is counted during the corresponding part of the process. Enchantments on the battlefield are counted after Creatures have been sacrificed, and Enchantments on the battlefield are counted after Artifacts have been sacrificed. Thus, an Artifact Creature or Enchantment Creature sacrificed to the first part of the spell would not be counted when determining how many Artifacts or Enchantments are on the battlefield for next parts of the spell.'
@@ -1151,7 +1163,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Council of War and Peace',
-		'',
+		[],
 		[
 			CardColors.RED,
 			CardColors.WHITE,
@@ -1174,7 +1186,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'You can\'t cast a legendary instant unless you control a legendary creature or a legendary planeswalker. Once you begin to cast a legendary instant, losing control of your legendary creatures and planeswalkers won\'t affect that spell.',
+			ReminderTexts.LEGENDARY_INSTANT,
 			'This effect starts resolving with the player whose turn it is.',
 			'Goad counters do not exist in regular Magic: The Gathering rules, as goading a creature requires a subject that goaded the creature, so that the creature cannot attack that subject. As such we treat the player to the right, even if it changes, as the goading subject.',
 			'Permanents with goad counters are goaded while the counter is on them.',
@@ -1192,7 +1204,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Critical Hit',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -1223,7 +1235,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Criticalest Hit',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -1255,7 +1267,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Forced retirement Plan',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.RED,
@@ -1286,7 +1298,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Glorious Combat',
-		'',
+		[],
 		[
 			CardColors.RED,
 			CardColors.GREEN,
@@ -1321,7 +1333,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Grandpa\'s Watch',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -1346,7 +1358,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'It\'s a "Miracle!"',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -1387,7 +1399,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Johnny\'s Guidance',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -1414,7 +1426,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Luuuucky!',
-		'',
+		[],
 		[
 			CardColors.BLACK,
 			CardColors.RED,
@@ -1440,7 +1452,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Magic trick',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -1466,7 +1478,11 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Main Character Hammer',
-		'<i class="ms ms-1 ms-cost ms-shadow"></i><i class="ms ms-wp ms-cost ms-shadow"></i><i class="ms ms-bp ms-cost ms-shadow"></i>',
+		[
+			CostPips.GENERIC_1,
+			CostPips.PHYREXIAN_WHITE,
+			CostPips.PHYREXIAN_BLACK,
+		],
 		[
 			CardColors.WHITE,
 			CardColors.BLACK,
@@ -1494,7 +1510,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'One with za warudo!',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 			CardColors.BLUE,
@@ -1520,7 +1536,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Protein, Creatine and Steroi-',
-		'',
+		[],
 		[
 			CardColors.GREEN,
 			CardColors.BLUE,
@@ -1546,7 +1562,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Pull the plug',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.BLACK,
@@ -1573,7 +1589,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Rich Uncle Heritage',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLACK,
@@ -1599,7 +1615,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Sky Fall',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLACK,
@@ -1630,7 +1646,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'That\'s the sound of the Police',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.RED,
@@ -1664,7 +1680,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'The Honoured One',
-		'',
+		[],
 		[
 			CardColors.BLUE,
 			CardColors.RED,
@@ -1701,7 +1717,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'The Ur-Dragon\'s Amusement',
-		'',
+		[],
 		[
 			CardColors.WHITE,
 			CardColors.BLUE,
@@ -1740,7 +1756,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			)
 		],
 		'Timmy\'s Fun',
-		'',
+		[],
 		[
 			CardColors.RED,
 			CardColors.GREEN,
@@ -1756,5 +1772,123 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		'Combo Star - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."',
 		'https://mtg.design/i/zhyl50.jpg',
+	),
+	new GloryCard(
+		59,
+		[
+			new SetIdRarity(
+				59,
+				CardSet.MAGIC_GLORY_1,
+				CardRarity.MYTHIC,
+			)
+		],
+		'Jesus Fucking Christ, Riding a T Fucking Rex',
+		[
+			' 5 / ',
+			CardColors.WHITE,
+			' 5 / ',
+			CardColors.BLUE,
+			' 5 / ',
+			CardColors.BLACK,
+			' 5 / ',
+			CardColors.RED,
+			' 5 / ',
+			CardColors.GREEN,
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+		],
+		[
+			CardColors.WHITE,
+			CardColors.BLUE,
+			CardColors.BLACK,
+			CardColors.RED,
+			CardColors.GREEN,
+		],
+		[
+			CardSuperTypes.LEGENDARY,
+			CardSuperTypes.GLORY,
+		],
+		[
+			CardTypes.ENCHANTMENT,
+			CardTypes.CREATURE
+		],
+		[
+			CardSubTypes.HUMAN,
+			CardSubTypes.DEMIGOD,
+			CardSubTypes.DINOSAUR,
+		],
+		'Vigilance, Reach, Trample, Haste, Islandwalk<br>When Jesus Fucking Christ, Riding a T Fucking Rex enters the battlefield, draw a card for each time any commander has been cast from the command zone this game.<br>Dinosaurs are indestructible.<br>Each land is an Island in addition to its other land types.<br>If Jesus Fucking Christ, Riding a T Fucking Rex would die, exile it with 3 time counters instead.It gains Suspend.<br>Jesus Fucking Christ, Riding a T Fucking Rex cannot be your commander.',
+		'https://mtg.design/i/ypgx71.jpg',
+		'',
+		'12',
+		'25',
+		[],
+		0,
+		new Date('2025-06-09')
+	),
+
+	new GloryCard(
+		60,
+		[
+			new SetIdRarity(
+				60,
+				CardSet.MAGIC_GLORY_1,
+				CardRarity.MYTHIC,
+			)
+		],
+		'Jesus Fucking Christ, Riding a T Fucking Rex',
+		[
+			CostPips.HYBRID_2_WHITE,
+			CostPips.HYBRID_2_BLUE,
+			CostPips.HYBRID_2_BLACK,
+			CostPips.HYBRID_2_RED,
+			CostPips.HYBRID_2_GREEN,
+			'',
+			'',
+			'',
+			'',
+			'',
+		],
+		[
+			CardColors.WHITE,
+			CardColors.BLUE,
+			CardColors.BLACK,
+			CardColors.RED,
+			CardColors.GREEN,
+		],
+		[
+			CardSuperTypes.LEGENDARY,
+			CardSuperTypes.GLORY,
+		],
+		[
+			CardTypes.KINDRED,
+			CardTypes.SORCERY
+		],
+		[
+			CardSubTypes.GOD,
+		],
+		'<i>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)</i><br>Choose one or more -<ul><li>Destroy all nonbasic nonisland lands.</li><li>Exile all Dinosaurs.</li><li>Destroy all creatures.They can\'t be regenerated.</li><li>Set the time counters of all cards your opponents have in suspend to equal to the difference in days between today and the next 3rd of April in the calendar. <i>(Include today and the next 3rd of April in the calculations)</i></li></ul>',
+		'https://mtg.design/i/uewu27',
+		'"Dinosaurs took too long to create White Monster, so I\'m giving way to Mankind." - Said the Wrathful God. ',
+		'',
+		'',
+		[
+			ReminderTexts.LEGENDARY_SORCERY,
+		],
+		0,
+		new Date('2025-06-09')
 	)
 ];

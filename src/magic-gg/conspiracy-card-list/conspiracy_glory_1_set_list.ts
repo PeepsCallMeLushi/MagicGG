@@ -15,7 +15,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Comboing Off!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -43,7 +43,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Cry me a river',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -65,7 +65,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Cry me a river',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -93,7 +93,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Heads will roll',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -122,7 +122,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'I hated that guy anyway!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -150,7 +150,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'I Hope the IRS doesn\'t find me!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -180,7 +180,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'I\'m a survivor!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -214,7 +214,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Jerking each other!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -244,7 +244,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Odd one\'s out',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -266,7 +266,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'OUR victory!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -295,7 +295,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'The IRS found me...',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -327,7 +327,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Corporate Aquisition',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -359,7 +359,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Free real estate!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -387,7 +387,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Loser\'s Loser',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -416,7 +416,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Oh shit, the cops!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -445,7 +445,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'One man\'s trash is another man\'s treasure',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -475,7 +475,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Participation Prize',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -503,7 +503,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Reduce, Reuse, and Recycle',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -531,7 +531,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Social anxiety',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -557,7 +557,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Wake me up when the combo stops',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -587,7 +587,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Friends with benefits',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -615,7 +615,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Is this private Ryan?',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -643,7 +643,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Joker!',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -665,7 +665,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Marcelo\'s Special',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -687,7 +687,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Potato Combo',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -709,7 +709,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'"Truly yours... Carolina!"',
-		'',
+		[],
 		[],
 		[],
 		[

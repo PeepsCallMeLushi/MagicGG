@@ -3,11 +3,11 @@ export class GloryCard {
 		public id: number = 0,
 		public sets: SetIdRarity[] = [],
 		public cardName: string = '',
-		public cardCost: string = '',
+		public cardCost: string[] = [],
 		public cardColors: string[] = [],
-		public superTypes: number[] = [],
-		public types: number[] = [],
-		public subTypes: number[] = [],
+		public superTypes: string[] = [],
+		public types: string[] = [],
+		public subTypes: string[] = [],
 		public cardEffect: string = '',
 		public imgURL: string = '',
 		public flavourText: string = '',
@@ -15,6 +15,7 @@ export class GloryCard {
 		public toughness: string = '',
 		public rulings: string[] = [],
 		public loyaltyCounters: number = 0,
+		public cardReveal?: Date,
 	) {}
 }
 
@@ -22,6 +23,6 @@ export class SetIdRarity {
 	constructor(
 		public cardId: number = 0,
 		public set: string = '',
-		public rarity: number = 0,
+		public rarity: string = '',
 	) {}
 }

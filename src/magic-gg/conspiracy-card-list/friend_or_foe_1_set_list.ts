@@ -16,7 +16,7 @@ export const FRIEND_OR_FOE_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Friend name:',
-		'',
+		[],
 		[],
 		[],
 		[
@@ -38,7 +38,7 @@ export const FRIEND_OR_FOE_1_SET_LIST: GloryCard[] = [
 			),
 		],
 		'Foe name:',
-		'',
+		[],
 		[],
 		[],
 		[

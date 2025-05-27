@@ -1,9 +1,10 @@
 export enum CardTypes {
-	INSTANT = 1,
-	ENCHANTMENT = 2,
-	SORCERY = 3,
-	CREATURE = 4,
-	ARTIFACT = 5,
-	PLANESWALKER = 6,
-	CONSPIRACY = 7,
+	INSTANT = 'Instant',
+	ENCHANTMENT = 'Enchantment',
+	SORCERY = 'Sorcery',
+	CREATURE = 'Creature',
+	ARTIFACT = 'Artifact',
+	PLANESWALKER = 'Planeswalker',
+	CONSPIRACY = 'Conspiracy',
+	KINDRED = 'Kindred',
 }
