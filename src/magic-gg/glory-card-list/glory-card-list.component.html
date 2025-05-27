@@ -1,6 +1,6 @@
 <div class="card-list-container" *ngIf="cardSetFound">
 	@for (card of cardList; track $index) {
-		<app-glory-card
+		<app-glory-card *ngIf="revealCard(card.cardReveal)"
 				[cardToBeDisplayed]="card"
 				[cardSetBeingDisplayed]="cardSetList">
 		</app-glory-card>

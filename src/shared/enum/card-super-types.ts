@@ -1,5 +1,5 @@
 export enum CardSuperTypes {
-	GLORY = 'Glory',
+	GLORY = '<a href="/glory-supertype">Glory</a>',
 	LEGENDARY = 'Legendary',
-	WORLD = 'World',
+	WORLD = '<a href="/glossary#World_Supertype">World</a>',
 }

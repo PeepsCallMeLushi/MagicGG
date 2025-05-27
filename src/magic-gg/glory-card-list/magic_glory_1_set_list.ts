@@ -32,7 +32,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Endstep<br><br>Sacrifice Golos\' Piligrimage: If Golos\' Piligrimage had 20 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep that player gets a Pilgrim counter." <i>(Players with Pilgrim counters have: <i class="ms ms-7 ms-cost ms-shadow"></i>, remove a Pilgrim counter: Exile the top three cards of your library. You may play them this turn without paying their mana costs.)</i>',
+		`${ReminderTexts.COMBO_STAR} - Endstep<br><br>Sacrifice Golos\' Piligrimage: If Golos\' Piligrimage had 20 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep that player gets a Pilgrim counter." ${ReminderTexts.PILGRIM_COUNTERS}`,
 		'https://mtg.design/i/zwhe08.jpg',
 	),
 	new GloryCard(
@@ -58,7 +58,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - A player Eats, Drinks, leaves the table while still alive <i>(Each instance of putting food in a mouth and each sip count as Eating and Drinking)</i><br><br>Sacrifice Spike\'s Meet-up: If Spike\'s Meet-up had 5 or more combo counters on it, you get an emblem with "All players play with their hands and with the top card of their libraries revealed. Players may play cards from the top of their library. Players may play 2 additional lands on each of their turns. Players may cast spells from exile by paying their mana cost and by exiling a card from their and. Each nonland card in each player\'s graveyard has escape. The Escape cost is their mana cost. Permanents cast this way enter with a finality counter on them."',
+		`${ReminderTexts.COMBO_STAR} - A player Eats, Drinks, leaves the table while still alive ${ReminderTexts.EATING_DRINKING}<br><br>Sacrifice Spike\'s Meet-up: If Spike\'s Meet-up had 5 or more combo counters on it, you get an emblem with "All players play with their hands and with the top card of their libraries revealed. Players may play cards from the top of their library. Players may play 2 additional lands on each of their turns. Players may cast spells from exile by paying their mana cost and by exiling a card from their and. Each nonland card in each player\'s graveyard has escape. The Escape cost is their mana cost. Permanents cast this way enter with a finality counter on them."`,
 		'https://mtg.design/i/brzg41.jpg',
 	),
 	new GloryCard(
@@ -84,7 +84,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Gaining 5 or more Life, Attacking without Tapping, Exiling creatures creatures from the battlefield<br><br>Sacrifice Ajani\'s Protection: If Ajani\'s Protection had 5 or more combo counters on it, you get an emblem with "All Creatures have Flying, Vigilance, Lifelink, Double Strike, Shroud, Indistructuble and Toxic 1. Creatures can block more than one creature. Whenever a Life is gained through combat put a counter on this emblem. If this emblem has 120 or more counters or every player has an Ajani planeswalker with different names on the field, everyone wins the game."',
+		`${ReminderTexts.COMBO_STAR} - Gaining 5 or more Life, Attacking without Tapping, Exiling creatures creatures from the battlefield<br><br>Sacrifice Ajani\'s Protection: If Ajani\'s Protection had 5 or more combo counters on it, you get an emblem with "All Creatures have Flying, Vigilance, Lifelink, Double Strike, Shroud, Indistructuble and Toxic 1. Creatures can block more than one creature. Whenever a Life is gained through combat put a counter on this emblem. If this emblem has 120 or more counters or every player has an Ajani planeswalker with different names on the field, everyone wins the game."`,
 		'https://mtg.design/i/ukxp81.jpg',
 	),
 	new GloryCard(
@@ -108,9 +108,9 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>Choose a player.<br>Until the end of the chosen player\'s endstep: That player\'s life total can\'t change and they gain protection from everything. All permanents they control phase out. All their spells are exiled.',
+		`Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>Choose a player.<br>Until the end of the chosen player\'s endstep: That player\'s life total can\'t change and they gain protection from everything. All permanents they control phase out. All their spells are exiled.`,
 		'https://mtg.design/i/dosf80.jpg',
-		'<i>"I\'ll make you disappear!"</i>'
+		'"I\'ll make you disappear!"'
 	),
 	new GloryCard(
 		5,
@@ -160,7 +160,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Drawing a card outside of their draw phase, Scrying, Surveiling<br><br>Sacrifice Jace\'s Generosity: If Jace\'s Generosity had 3 or more combo counters on it, you get an emblem with "All Players Draw an additional Card in their draw phase"',
+		`${ReminderTexts.COMBO_STAR} - Drawing a card outside of their draw phase, Scrying, Surveiling<br><br>Sacrifice Jace\'s Generosity: If Jace\'s Generosity had 3 or more combo counters on it, you get an emblem with "All Players Draw an additional Card in their draw phase"`,
 		'https://mtg.design/i/ymew54.jpg',
 	),
 	new GloryCard(
@@ -209,7 +209,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Devoid <i>(This card has no color.)</i><br><br>Counter Target Spell or Ability that isn\'t a mana ability.<br>This spell can counter Glory spells and abilities by Glory sources that aren\'t mana abilities.',
+		`Devoid ${ReminderTexts.DEVOID}<br><br>Counter Target Spell or Ability that isn\'t a mana ability.<br>This spell can counter Glory spells and abilities by Glory sources that aren\'t mana abilities.`,
 		'https://mtg.design/i/yuvh62.jpg',
 		'"I wanna play too...!"'
 	),
@@ -234,7 +234,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Chose a permanent you control. Return it and target permanent you don\'t control that shares the same type as the permanent chosen this way.<br>Overload <i class="ms ms-2 ms-cost ms-shadow"></i><i class="ms ms-up ms-cost ms-shadow"></i> <i>(You may cast this spell for its overload cost.If you do, change its text by replacing all instances of \'target\' with \'each\'.)</i>',
+		`Chose a permanent you control. Return it and target permanent you don\'t control that shares the same type as the permanent chosen this way.<br>Overload <i class="ms ms-2 ms-cost ms-shadow"></i><i class="ms ms-up ms-cost ms-shadow"></i> ${ReminderTexts.OVERLOAD}`,
 		'https://mtg.design/i/jfco81.jpg',
 		'"Definitly not Cyclonic Rift!"'
 	),
@@ -284,7 +284,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.SORCERY,
 		],
 		[],
-		'Sacrifice a nonland permanent you control. Create a 4/4 Black and White Spirit Creature token named Vengeful Spirit with the same text box as the sacrificed permanent and create 2 gold tokens. <i>(A Gold token is an artifact with "Sacrifice this token: Add one mana of any color.")</i>',
+		`Sacrifice a nonland permanent you control. Create a 4/4 Black and White Spirit Creature token named Vengeful Spirit with the same text box as the sacrificed permanent and create 2 gold tokens. ${ReminderTexts.GOLD_TOKEN}`,
 		'https://mtg.design/i/azuh42.jpg',
 		'"MY BALLS! MY BALLS ARE MISSING!"',
 	),
@@ -361,7 +361,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Discard a card, Nonland Permanents being sacrificed<br><br>Sacrifice Tiny Bones\' Tiny Bones: If Tiny Bones\' Tiny Bones had 4 or more combo counters on it, you get an emblem with: "Whenever a player discards a card or sacrifices a permanent they get a 2/2 Zombie that is all colours if it was a creature, they get a gold token if it was a land, they draw a card if it was anything else."',
+		`${ReminderTexts.COMBO_STAR} - Discard a card, Nonland Permanents being sacrificed<br><br>Sacrifice Tiny Bones\' Tiny Bones: If Tiny Bones\' Tiny Bones had 4 or more combo counters on it, you get an emblem with: "Whenever a player discards a card or sacrifices a permanent they get a 2/2 Zombie that is all colours if it was a creature, they get a gold token if it was a land, they draw a card if it was anything else."`,
 		'https://mtg.design/i/xyfz25.jpg',
 	),
 	new GloryCard(
@@ -537,7 +537,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Cleave <i class="ms ms-rp ms-cost ms-shadow"></i><i>(You may cast this spell for its cleave cost. If you do remove the words in square brackets.)</i><br>Draw 4 cards[, then discard 2 cards].',
+		`Cleave <i class="ms ms-rp ms-cost ms-shadow"></i>${ReminderTexts.CLEAVE}<br>Draw 4 cards[, then discard 2 cards].`,
 		'https://mtg.design/i/nhhm89.jpg',
 		'I bet you\'re holding a goblin ass face drawing cards, aren\'t you?'
 	),
@@ -564,7 +564,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - One or more players lost exactly 1 life each<br><br>Sacrifice Ob Nixilis\' Impulse: If Ob Nixilis\' Impulse had 10 or more combo counters on it, you get an emblem with "Whenever a player causes one or more other players to lose exactly 1 life each, that player exiles the top card of their library and they may cast it until their next end step."',
+		`${ReminderTexts.COMBO_STAR} - One or more players lost exactly 1 life each<br><br>Sacrifice Ob Nixilis\' Impulse: If Ob Nixilis\' Impulse had 10 or more combo counters on it, you get an emblem with "Whenever a player causes one or more other players to lose exactly 1 life each, that player exiles the top card of their library and they may cast it until their next end step."`,
 		'https://mtg.design/i/zpju99.jpg',
 	),
 	new GloryCard(
@@ -588,7 +588,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.SORCERY,
 		],
 		[],
-		'Cleave <i class="ms ms-gp ms-cost ms-shadow"></i> <i>(You may cast this spell for its cleave cost. If you do remove the words in square brackets.)</i><br><br>Target Player searches their library for up to two[basic] land cards, reveal those cards and put[one into their hand and] the rest in the battlefield[tapped].',
+		`Cleave <i class="ms ms-gp ms-cost ms-shadow"></i> ${ReminderTexts.CLEAVE}<br><br>Target Player searches their library for up to two[basic] land cards, reveal those cards and put[one into their hand and] the rest in the battlefield[tapped].`,
 		'https://mtg.design/i/ymvv97.jpg',
 		'"Is that Brazil, caralho!?"',
 	),
@@ -615,7 +615,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Lands entering the battlefield<br><br>Sacrifice Nissa\'s Reach: If Nissa\'s Reach had 8 or more combo counters on it, you get an emblem with "All Players\' Lands produce one more mana that it could produce"',
+		`${ReminderTexts.COMBO_STAR} - Lands entering the battlefield<br><br>Sacrifice Nissa\'s Reach: If Nissa\'s Reach had 8 or more combo counters on it, you get an emblem with "All Players\' Lands produce one more mana that it could produce"`,
 		'https://mtg.design/i/zbci78.jpg',
 	),
 	new GloryCard(
@@ -639,7 +639,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Cleave<i class="ms ms-3 ms-cost ms-shadow"></i><i class="ms ms-gp ms-cost ms-shadow"></i> <i>(You may cast this spell for its cleave cost. If you do remove the words in square brackets.)</i><br>[Until end of turn,] Creatures you control gain Trample and gain +X/+X where X is the greatest power amongst creatures [you control] in the battlefield.',
+		`Cleave<i class="ms ms-3 ms-cost ms-shadow"></i><i class="ms ms-gp ms-cost ms-shadow"></i> ${ReminderTexts.CLEAVE}<br>[Until end of turn,] Creatures you control gain Trample and gain +X/+X where X is the greatest power amongst creatures [you control] in the battlefield.`,
 		'https://mtg.design/i/irvc08.jpg',
 		'"Y\'all\'re about to die!"',
 	),
@@ -748,7 +748,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Glory Kicker -  Discard a Card, Tap an untapped Creature you control, Sacrifice a creature, Return a nonland permanent you control to its owner\'s hand and/or pay 5 life. <i>(You may pay one or more of these additional costs as you cast this spell.You can only pay each cost once.)</i><br><br>Sacrifice target permanent you control.Search your library for a card with Converted Mana Cost equal to 1 plus the sacrificed card\'s cost plus the ammount of times it was kicked and put it on the battlefield, then suffle your library.<br>A land\'s converted mana cost is <i class="ms ms-0 ms-cost ms-shadow"></i>.',
+		`Glory Kicker -  Discard a Card, Tap an untapped Creature you control, Sacrifice a creature, Return a nonland permanent you control to its owner\'s hand and/or pay 5 life. ${ReminderTexts.GLORY_KICKER}<br><br>Sacrifice target permanent you control.Search your library for a card with Converted Mana Cost equal to 1 plus the sacrificed card\'s cost plus the ammount of times it was kicked and put it on the battlefield, then suffle your library.<br>A land\'s converted mana cost is <i class="ms ms-0 ms-cost ms-shadow"></i>.`,
 		'https://mtg.design/i/pfuc49.jpg',
 		'"To infinity, and beyond!"'
 	),
@@ -777,9 +777,9 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.SORCERY,
 		],
 		[],
-		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 			+'This Spell Cannot be countered.<br><br>If each other player in the game agrees to lose half of their Life rounded up, exile this spell from the stack.<br><br>'
-			+'Glory Kicker - Sacrifice a nontoken creature, nontoken enchantment, nontoken artifact, nontoken land and/or a token.<i>(You may pay one or more of these additional costs as you cast this spell.You can only pay each cost once.)</i><br>'
+		+ `Glory Kicker - Sacrifice a nontoken creature, nontoken enchantment, nontoken artifact, nontoken land and/or a token.${ReminderTexts.GLORY_KICKER}<br>`
 			+'Roll a dice, plus a dice for each time this spell was kicked, any dice may be chosen per dice roll.<br><br>'
 			+'1 - Set your life to 1. If your Life was already 1 you lose the game.<br><br>'
 			+'2 - Choose up to two players. Take control of all permanents that share a type with the card you sacrificed this way from those two players.<br><br>'
@@ -839,15 +839,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-			+'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 			+'Each Player secretly votes for Belle or Brawl, then those votes are revealed.<br>If Belle gets more votes, each player creates a Beauty token.<br>If Brawl gets more votes or is tied for more votes, each player creates a Ugly Beast token for each opponent.',
 		'https://mtg.design/i/lpor52.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'A Beauty Token is a 1/5 white and black Human token with first strike and deathtouch.',
 			'A Ugly Beast Token is a 4/4 red and green Beast token with trample and menace.'
 		]
@@ -877,15 +877,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-			+'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+			+`Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Body or Mind, then those votes are revealed.<br>If Body gets more votes, each player sets their Life back to their starting life total, all poison counters are removed, players cannot get poisoned, players cannot win or lose the game until it is the turn of the player that cast this spell.<br>If Mind gets more votes, or is tied for more votes, each player Scries 3, Draws 4.',
 		'https://mtg.design/i/gtcb95.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 		]
 	),
 	new GloryCard(
@@ -913,15 +913,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Chaos or Order, then those votes are revealed.<br>If Order gets more votes, each player sacrifices a create and gains life equal to its toughness and draws cards equal to half of its power rounded down.<br>If Chaos gets more votes, or is tied for more votes, each player sacrifices a creature, each oponent loses life equal to the sacrificed creature\'s thoughness, each player mills cards equal to its power and draws cards equal to the total converted mana cost they\'ve milled this way.',
 		'https://mtg.design/i/khpn62.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 		]
 	),
 	new GloryCard(
@@ -949,15 +949,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Death or Rebirth, then those votes are revealed<br>If Rebirth gets more votes, each player sacrifices all of their creatures. Each player creates a copy token of all nontoken creatures sacrificed this way. The tokens aren\'t legendary if the sacrificed creatures were legendary.The tokens are spirits in addition to the sacrificed creature\'s types.<br>If Death gets more votes, or is tied for more votes, all creatures are sacrificed.',
 		'https://mtg.design/i/mmxx56.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'If Rebirth gets more votes, Council of Death and Rebirth creates copies of nontoken creatures that were sacrificed with its effect.',
 			'If Rebirth gets more votes, each player creates a copy token of all nontoken creatures sacrificed with Council of Death and Rebirth.',
 			'If Rebirth gets more votes, the copy tokens created by Council of Death and Rebirth lose Legendary if they were legends.',
@@ -989,15 +989,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Fame or Fortune, then those votes are revealed.<br>If Fame gets more votes, each player casts their commander for free, the cast resolution cannot be prevented in any way, and commander tax isn\'t accumulated. For each commander that was already on the battlefield, they gain Vigilance, Reach, First strike and trample, their base power and toughness are set to 10.<br>If Fortune gets more votes or is tied for more votes, each player gets a gold token equal to the total commander tax of the table.',
 		'https://mtg.design/i/vglq18.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 		]
 	),
 	new GloryCard(
@@ -1025,15 +1025,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Feast or Famine, then those votes are revealed.<br>If Feast gets more votes, each player chooses a creature they control and a creature they don\'t control.Those creatures fight.Each creature can only be chosen by their controller once.Repeat this process until every creature has been chosen by its controler.If a creature died as a result of a fight, each player creates a food token.<br>If Famine gets more more votes, or is tied for more votes, destroy all foods.',
 		'https://mtg.design/i/ulnu98.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'First the player whose turn it is chooses which creatures two creatures to fight, those creatures fight, then each other player in turn order does the same. Each player will select only two creatures at a time and then pass the choice to the next player in turn order. Repeat this untill every creature still on the battlefield has been chosen by their controller at least once. After that each player creates a number of food tokens equal to the total number of creatures that died.'
 		]
 	),
@@ -1062,15 +1062,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Hearth or Home, then those votes are revealed.<br>If Hearth gets more votes, each player may sacrifice any number of creatures. Create a Wastes token per creature sacrificed this way. Then each player can put on the battlefield tapped a number of lands equal to the greatest power or toughness amongst all creatures on the battlefield.<br>If Home gets more votes, or is tied for more votes, each player must exile all creatures they control, then return those cards to the battlefield under their owner\'s control.',
 		'https://mtg.design/i/ojns94.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'This effect starts resolving with the player whose turn it is.',
 			'The number of tapped lands put on the battlefield is equal to the greatest power or toughness amongst all creatures on the battlefield, whichever value is the greatest.',
 			'Council of Hearth and Home creates a token that\'s a copy of the card <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> in the Oracle card reference. Official text for <a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=665822" target="_blank">Wastes</a> can be found using the Gatherer card database at Gatherer.Wizards.com.'
@@ -1101,15 +1101,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Luck or Skill, then those votes are revealed.<br>If Luck gets more votes, you flip a coin for each permanent on the battlefield, if it comes up heads you create a token that\'s a copy of it, if it comes up tails, its controller sacrifices it.<br>If Skill gets more votes, or is tied for more votes, each player sacrifices a permanent, then for each opponent that player creates a token of the sacrificed permanent.',
 		'https://mtg.design/i/jsvp73.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'This effect starts resolving with the player whose turn it is.',
 			'If Skill is resolved, then each player sacrifices a permament, then creates an ammount of token copies of that permanent equal to the ammount of opponents that player has.'
 		]
@@ -1139,15 +1139,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for Truth or Justice, then those votes are revealed.<br>If Truth gets more votes, Each player discards their hand, then draws cards equal to thetotal number of cards discarded this way.<br>If Justice gets more votes, or is tied for more votes, each player chooses a number of creatures they control equal to the number of creatures controlled by the player who controls the fewest, then sacrifices the rest. Repeat this process for Artifacts and Enchantments.',
 		'https://mtg.design/i/kqla19.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'This effect starts resolving with the player whose turn it is.',
 			'If Justice is voted, First the player whose turn it is chooses which creatures (if any) to keep, then each other player in turn order does the same. Each player will know the choices made by the players who chose before them. All of the unchosen creatures are then sacrificed simultaneously. The process is repeated for artifacts and then enchantments, one at the time. Players will again know earlier choices made when deciding what to sacrifice.',
 			'Each type of object is counted during the corresponding part of the process. Enchantments on the battlefield are counted after Creatures have been sacrificed, and Enchantments on the battlefield are counted after Artifacts have been sacrificed. Thus, an Artifact Creature or Enchantment Creature sacrificed to the first part of the spell would not be counted when determining how many Artifacts or Enchantments are on the battlefield for next parts of the spell.'
@@ -1178,15 +1178,15 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.COUNCIL,
 		],
-		'<i>(You may cast a legendary instant only if you control a legendary creature or planeswalker.)</i><br><br>'
-		+ 'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br><br>'
+		`${ReminderTexts.LEGENDARY_INSTANT}<br><br>`
+		+ `Split Second ${ReminderTexts.SPLIT_SECOND}<br><br>`
 		+ 'Each Player secretly votes for War or Peace, then those votes are revealed.<br>If War gets more votes, put a goad counter on each artifact, enchantment and creature on the battlefield. <i>(Permanents with goad counters cannot attack the player to their controller\'s right and are X/X Creatures in addition to their other type if they weren\'t, where X is their mana value.)</i><br>If Peace gets more votes, or is tied for more votes, creatures can\'t attack until the next turn, then each player gives a permanent of their choice to the player to their right.',
 		'https://mtg.design/i/vcvi60.jpg',
 		'',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_INSTANT,
+			ReminderTexts.LEGENDARY_INSTANT_RULINGS,
 			'This effect starts resolving with the player whose turn it is.',
 			'Goad counters do not exist in regular Magic: The Gathering rules, as goading a creature requires a subject that goaded the creature, so that the creature cannot attack that subject. As such we treat the player to the right, even if it changes, as the goading subject.',
 			'Permanents with goad counters are goaded while the counter is on them.',
@@ -1413,7 +1413,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - A Player plays 3 or more cards in a turn, A player has 2 or more spells in the stack<br><br>Sacrifice Johnny\'s Guidance: If Johnny\'s Guiance had 5 or more combo counters on it, you get an emblem with "All instants and glory instants have Storm. Whenever a player casts a sorcery or Glory sorcery, each player copies that sorcery for each time they\'ve cast their commander this game. Enter the battlefield triggers trigger thrice."',
+		`${ReminderTexts.COMBO_STAR} - A Player plays 3 or more cards in a turn, A player has 2 or more spells in the stack<br><br>Sacrifice Johnny\'s Guidance: If Johnny\'s Guiance had 5 or more combo counters on it, you get an emblem with "All instants and glory instants have Storm. Whenever a player casts a sorcery or Glory sorcery, each player copies that sorcery for each time they\'ve cast their commander this game. Enter the battlefield triggers trigger thrice."`,
 		'https://mtg.design/i/wlpd94.jpg',
 	),
 	new GloryCard(
@@ -1522,7 +1522,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Cleave <i class="ms ms-gp ms-cost ms-shadow"></i><i class="ms ms-up ms-cost ms-shadow"></i><i>(You may cast this spell for its cleave cost. If you do remove the words in square brackets.)</i><br><br>Until the end of turn, [your] Spells cannot be countered [by blue spells or abilities].',
+		`Cleave <i class="ms ms-gp ms-cost ms-shadow"></i><i class="ms ms-up ms-cost ms-shadow"></i>${ReminderTexts.CLEAVE}<br><br>Until the end of turn, [your] Spells cannot be countered [by blue spells or abilities].`,
 		'https://mtg.design/i/usur66.jpg',
 		'"The trees speak to me..."'
 	),
@@ -1575,7 +1575,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br>End The turn.',
+		`Split Second ${ReminderTexts.SPLIT_SECOND}<br>End The turn.`,
 		'https://mtg.design/i/lxfg01.jpg',
 		'"WHAT HAPPENED TO MY TV!?"'
 	),
@@ -1659,7 +1659,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.INSTANT,
 		],
 		[],
-		'Split Second <i>(As long as this spell is on the stack, players can\'t cast spells or activate abilities that aren\'t mana abilities.)</i><br>Opponents who have the most or tied for most cards in hand, life total, permanents on their battlefield, and/or cards in their graveyard, lose 5 life each.<br>Opponent who has the least or tied for least commander tax between individual commanders and / or cards in their graveyard, lose 5 life each.<br>You gain life equal to the life lost this way.',
+		`Split Second ${ReminderTexts.SPLIT_SECOND}<br>Opponents who have the most or tied for most cards in hand, life total, permanents on their battlefield, and/or cards in their graveyard, lose 5 life each.<br>Opponent who has the least or tied for least commander tax between individual commanders and / or cards in their graveyard, lose 5 life each.<br>You gain life equal to the life lost this way.`,
 		'https://mtg.design/i/bslb25.jpg',
 		'"Woop-woop, that\'s the sound of da beast"',
 		'',
@@ -1734,7 +1734,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - Cards with subtypes entering the battlefield<br><br>Sacrifice The Ur - Dragon\'s Amusement: If The Ur-Dragon\'s Amusement had 25 or more combo counters on it, you get an emblem with "Every player\'s spell with a subtype costs {1} less to be cast for each permanent with a subtype on the battlefield. If a player puts a nonland nontoken permanent on the battlefield that has a subtype without casting it other by this effect, that player faces a villanous choice - Take 11 commander damage From The Ur-Dragon without losing life or let all other players in the table put a permanent with a subtype on the battlefield from where that player\'s permanent came from with equal or less converted mana cost".',
+		`${ReminderTexts.COMBO_STAR} - Cards with subtypes entering the battlefield<br><br>Sacrifice The Ur - Dragon\'s Amusement: If The Ur-Dragon\'s Amusement had 25 or more combo counters on it, you get an emblem with "Every player\'s spell with a subtype costs {1} less to be cast for each permanent with a subtype on the battlefield. If a player puts a nonland nontoken permanent on the battlefield that has a subtype without casting it other by this effect, that player faces a villanous choice - Take 11 commander damage From The Ur-Dragon without losing life or let all other players in the table put a permanent with a subtype on the battlefield from where that player\'s permanent came from with equal or less converted mana cost".`,
 		'https://mtg.design/i/xlvt35.jpg',
 		'',
 		'',
@@ -1770,7 +1770,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		'Combo Star - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."',
+		`${ReminderTexts.COMBO_STAR} - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."`,
 		'https://mtg.design/i/zhyl50.jpg',
 	),
 	new GloryCard(
@@ -1880,13 +1880,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[
 			CardSubTypes.GOD,
 		],
-		'<i>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)</i><br>Choose one or more -<ul><li>Destroy all nonbasic nonisland lands.</li><li>Exile all Dinosaurs.</li><li>Destroy all creatures.They can\'t be regenerated.</li><li>Set the time counters of all cards your opponents have in suspend to equal to the difference in days between today and the next 3rd of April in the calendar. <i>(Include today and the next 3rd of April in the calculations)</i></li></ul>',
+		`${ReminderTexts.LEGENDARY_SORCERY}<br>Choose one or more -<ul><li>Destroy all nonbasic nonisland lands.</li><li>Exile all Dinosaurs.</li><li>Destroy all creatures.They can\'t be regenerated.</li><li>Set the time counters of all cards your opponents have in suspend to equal to the difference in days between today and the next 3rd of April in the calendar. <i>(Include today and the next 3rd of April in the calculations)</i></li></ul>`,
 		'https://mtg.design/i/uewu27',
 		'"Dinosaurs took too long to create White Monster, so I\'m giving way to Mankind." - Said the Wrathful God. ',
 		'',
 		'',
 		[
-			ReminderTexts.LEGENDARY_SORCERY,
+			ReminderTexts.LEGENDARY_SORCERY_RULINGS,
 		],
 		0,
 		new Date('2025-06-09')
