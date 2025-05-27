@@ -33,7 +33,7 @@
 						],
 						"styles": [
 							"@angular/material/prebuilt-themes/cyan-orange.css",
-							"node_modules/bootstrap/scss/bootstrap.scss",
+							"node_modules/bootstrap/scss/bootstrap-grid.scss",
 							"src/styles.scss"
 						],
 						"scripts": [
@@ -54,7 +54,13 @@
 									"maximumError": "8kB"
 								}
 							],
-							"outputHashing": "all"
+							"outputHashing": "all",
+							"fileReplacements": [
+								{
+									"replace": "src/shared/enum/card-super-types.ts",
+									"with": "src/shared/enum/prod/card-super-types.ts"
+								}
+							]
 						},
 						"development": {
 							"optimization": false,
@@ -96,7 +102,7 @@
 						],
 						"styles": [
 							"@angular/material/prebuilt-themes/cyan-orange.css",
-							"node_modules/bootstrap/scss/bootstrap.scss",
+							"node_modules/bootstrap/scss/bootstrap-grid.scss",
 							"src/styles.scss"
 						],
 						"scripts": [
