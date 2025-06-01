@@ -10,6 +10,10 @@ body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+h2:not(:first-of-type) {
+	margin-top: 100px;
+}
+
 .spacer {
 	flex: 1 1 auto;
 }
@@ -156,9 +160,12 @@ body {
 
 .info-content {
 	margin: 0px auto;
-	width: 50%;
 	text-align: left;
 	padding-bottom: 192px;
+	li {
+		margin: 10px 0px;
+	}
+	width: 50%;
 	@media only screen and (max-width: 992px) {
 		width: 65%;
 	}
@@ -167,6 +174,22 @@ body {
 	}
 	@media only screen and (max-width: 600px) {
 		width: 85%;
+	}
+
+	&-large {
+		width: 80%;
+
+		@media only screen and (max-width: 992px) {
+			width: 85%;
+		}
+
+		@media only screen and (max-width: 768px) {
+			width: 90%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			width: 95%;
+		}
 	}
 }
 

@@ -11,5 +11,4 @@ export enum ReminderTexts {
 	GOLD_TOKEN = '<i>(A Gold token is an artifact with "Sacrifice this token: Add one mana of any color.")</i>',
 	CLEAVE = '<i>(You may cast this spell for its cleave cost. If you do remove the words in square brackets.)</i>',
 	GLORY_KICKER = '<i>(You may pay one or more of these additional costs as you cast this spell.You can only pay each cost once.)</i>',
-	COMBO_STAR = '<a href="/glossary#Combo_Star">Combo Star</a>',
 }

@@ -5,8 +5,23 @@ import { HomePageComponent } from '../magic-gg/home-page/home-page.component';
 import { GlossaryComponent } from '../magic-gg/glossary/glossary.component';
 import { CardViewerComponent } from '../shared/component/card-viewer/card-viewer.component';
 import { CardSetListComponent } from '../magic-gg/card-set-list/card-set-list.component';
+import { GloryFormatsComponent } from '../magic-gg/glory-formats/glory-formats.component';
+import { GlorySupertypeComponent } from '../magic-gg/glory-supertype/glory-supertype.component';
+import { ConspiracySubtypesComponent } from '../magic-gg/conspiracy-subtypes/conspiracy-subtypes.component';
 
 export const routes: Routes = [
+	{
+		path: 'formats',
+		component: GloryFormatsComponent,
+	},
+	{
+		path: 'glory-supertype',
+		component: GlorySupertypeComponent,
+	},
+	{
+		path: 'conspiracy-subtypes',
+		component: ConspiracySubtypesComponent,
+	},
 	{
 		path: 'card-list',
 		children: [

@@ -6,6 +6,7 @@ import { CardSuperTypes } from "../../shared/enum/card-super-types";
 import { CardTypes } from "../../shared/enum/card-types";
 import { CostPips } from "../../shared/enum/cost-pips";
 import { ReminderTexts } from "../../shared/enum/reminder-texts";
+import { ReminderTextsWithURLs } from "../../shared/enum/reminder-texts-with-urls";
 import { GloryCard, SetIdRarity } from "../../shared/models/glory-card.model";
 
 export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
@@ -32,7 +33,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Endstep<br><br>Sacrifice Golos\' Piligrimage: If Golos\' Piligrimage had 20 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep that player gets a Pilgrim counter." ${ReminderTexts.PILGRIM_COUNTERS}`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Endstep<br><br>Sacrifice Golos\' Piligrimage: If Golos\' Piligrimage had 20 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep that player gets a Pilgrim counter." ${ReminderTexts.PILGRIM_COUNTERS}`,
 		'https://mtg.design/i/zwhe08.jpg',
 	),
 	new GloryCard(
@@ -58,7 +59,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - A player Eats, Drinks, leaves the table while still alive ${ReminderTexts.EATING_DRINKING}<br><br>Sacrifice Spike\'s Meet-up: If Spike\'s Meet-up had 5 or more combo counters on it, you get an emblem with "All players play with their hands and with the top card of their libraries revealed. Players may play cards from the top of their library. Players may play 2 additional lands on each of their turns. Players may cast spells from exile by paying their mana cost and by exiling a card from their and. Each nonland card in each player\'s graveyard has escape. The Escape cost is their mana cost. Permanents cast this way enter with a finality counter on them."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - A player Eats, Drinks, leaves the table while still alive ${ReminderTexts.EATING_DRINKING}<br><br>Sacrifice Spike\'s Meet-up: If Spike\'s Meet-up had 5 or more combo counters on it, you get an emblem with "All players play with their hands and with the top card of their libraries revealed. Players may play cards from the top of their library. Players may play 2 additional lands on each of their turns. Players may cast spells from exile by paying their mana cost and by exiling a card from their and. Each nonland card in each player\'s graveyard has escape. The Escape cost is their mana cost. Permanents cast this way enter with a finality counter on them."`,
 		'https://mtg.design/i/brzg41.jpg',
 	),
 	new GloryCard(
@@ -84,7 +85,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Gaining 5 or more Life, Attacking without Tapping, Exiling creatures creatures from the battlefield<br><br>Sacrifice Ajani\'s Protection: If Ajani\'s Protection had 5 or more combo counters on it, you get an emblem with "All Creatures have Flying, Vigilance, Lifelink, Double Strike, Shroud, Indistructuble and Toxic 1. Creatures can block more than one creature. Whenever a Life is gained through combat put a counter on this emblem. If this emblem has 120 or more counters or every player has an Ajani planeswalker with different names on the field, everyone wins the game."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Gaining 5 or more Life, Attacking without Tapping, Exiling creatures creatures from the battlefield<br><br>Sacrifice Ajani\'s Protection: If Ajani\'s Protection had 5 or more combo counters on it, you get an emblem with "All Creatures have Flying, Vigilance, Lifelink, Double Strike, Shroud, Indistructuble and Toxic 1. Creatures can block more than one creature. Whenever a Life is gained through combat put a counter on this emblem. If this emblem has 120 or more counters or every player has an Ajani planeswalker with different names on the field, everyone wins the game."`,
 		'https://mtg.design/i/ukxp81.jpg',
 	),
 	new GloryCard(
@@ -160,7 +161,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Drawing a card outside of their draw phase, Scrying, Surveiling<br><br>Sacrifice Jace\'s Generosity: If Jace\'s Generosity had 3 or more combo counters on it, you get an emblem with "All Players Draw an additional Card in their draw phase"`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Drawing a card outside of their draw phase, Scrying, Surveiling<br><br>Sacrifice Jace\'s Generosity: If Jace\'s Generosity had 3 or more combo counters on it, you get an emblem with "All Players Draw an additional Card in their draw phase"`,
 		'https://mtg.design/i/ymew54.jpg',
 	),
 	new GloryCard(
@@ -361,7 +362,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Discard a card, Nonland Permanents being sacrificed<br><br>Sacrifice Tiny Bones\' Tiny Bones: If Tiny Bones\' Tiny Bones had 4 or more combo counters on it, you get an emblem with: "Whenever a player discards a card or sacrifices a permanent they get a 2/2 Zombie that is all colours if it was a creature, they get a gold token if it was a land, they draw a card if it was anything else."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Discard a card, Nonland Permanents being sacrificed<br><br>Sacrifice Tiny Bones\' Tiny Bones: If Tiny Bones\' Tiny Bones had 4 or more combo counters on it, you get an emblem with: "Whenever a player discards a card or sacrifices a permanent they get a 2/2 Zombie that is all colours if it was a creature, they get a gold token if it was a land, they draw a card if it was anything else."`,
 		'https://mtg.design/i/xyfz25.jpg',
 	),
 	new GloryCard(
@@ -564,7 +565,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - One or more players lost exactly 1 life each<br><br>Sacrifice Ob Nixilis\' Impulse: If Ob Nixilis\' Impulse had 10 or more combo counters on it, you get an emblem with "Whenever a player causes one or more other players to lose exactly 1 life each, that player exiles the top card of their library and they may cast it until their next end step."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - One or more players lost exactly 1 life each<br><br>Sacrifice Ob Nixilis\' Impulse: If Ob Nixilis\' Impulse had 10 or more combo counters on it, you get an emblem with "Whenever a player causes one or more other players to lose exactly 1 life each, that player exiles the top card of their library and they may cast it until their next end step."`,
 		'https://mtg.design/i/zpju99.jpg',
 	),
 	new GloryCard(
@@ -615,7 +616,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Lands entering the battlefield<br><br>Sacrifice Nissa\'s Reach: If Nissa\'s Reach had 8 or more combo counters on it, you get an emblem with "All Players\' Lands produce one more mana that it could produce"`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Lands entering the battlefield<br><br>Sacrifice Nissa\'s Reach: If Nissa\'s Reach had 8 or more combo counters on it, you get an emblem with "All Players\' Lands produce one more mana that it could produce"`,
 		'https://mtg.design/i/zbci78.jpg',
 	),
 	new GloryCard(
@@ -1413,7 +1414,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - A Player plays 3 or more cards in a turn, A player has 2 or more spells in the stack<br><br>Sacrifice Johnny\'s Guidance: If Johnny\'s Guiance had 5 or more combo counters on it, you get an emblem with "All instants and glory instants have Storm. Whenever a player casts a sorcery or Glory sorcery, each player copies that sorcery for each time they\'ve cast their commander this game. Enter the battlefield triggers trigger thrice."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - A Player plays 3 or more cards in a turn, A player has 2 or more spells in the stack<br><br>Sacrifice Johnny\'s Guidance: If Johnny\'s Guiance had 5 or more combo counters on it, you get an emblem with "All instants and glory instants have Storm. Whenever a player casts a sorcery or Glory sorcery, each player copies that sorcery for each time they\'ve cast their commander this game. Enter the battlefield triggers trigger thrice."`,
 		'https://mtg.design/i/wlpd94.jpg',
 	),
 	new GloryCard(
@@ -1734,7 +1735,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - Cards with subtypes entering the battlefield<br><br>Sacrifice The Ur - Dragon\'s Amusement: If The Ur-Dragon\'s Amusement had 25 or more combo counters on it, you get an emblem with "Every player\'s spell with a subtype costs {1} less to be cast for each permanent with a subtype on the battlefield. If a player puts a nonland nontoken permanent on the battlefield that has a subtype without casting it other by this effect, that player faces a villanous choice - Take 11 commander damage From The Ur-Dragon without losing life or let all other players in the table put a permanent with a subtype on the battlefield from where that player\'s permanent came from with equal or less converted mana cost".`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - Cards with subtypes entering the battlefield<br><br>Sacrifice The Ur - Dragon\'s Amusement: If The Ur-Dragon\'s Amusement had 25 or more combo counters on it, you get an emblem with "Every player\'s spell with a subtype costs {1} less to be cast for each permanent with a subtype on the battlefield. If a player puts a nonland nontoken permanent on the battlefield that has a subtype without casting it other by this effect, that player faces a villanous choice - Take 11 commander damage From The Ur-Dragon without losing life or let all other players in the table put a permanent with a subtype on the battlefield from where that player\'s permanent came from with equal or less converted mana cost".`,
 		'https://mtg.design/i/xlvt35.jpg',
 		'',
 		'',
@@ -1770,7 +1771,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.ENCHANTMENT,
 		],
 		[],
-		`${ReminderTexts.COMBO_STAR} - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."`,
+		`${ReminderTextsWithURLs.COMBO_STAR} - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."`,
 		'https://mtg.design/i/zhyl50.jpg',
 	),
 	new GloryCard(

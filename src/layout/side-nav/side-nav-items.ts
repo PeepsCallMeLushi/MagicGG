@@ -11,6 +11,21 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
 		url: '/'
 	},
 	{
+		text: 'Formats',
+		icon: 'format_list_bulleted',
+		url: 'formats'
+	},
+	{
+		text: 'Glory Supertype',
+		icon: 'category',
+		url: 'glory-supertype'
+	},
+	{
+		text: 'Conspiracy Subtypes',
+		icon: 'phishing',
+		url: 'conspiracy-subtypes'
+	},
+	{
 		text: 'Lista de sets \'Glory\'',
 		icon: 'receipt_long',
 		url: 'card-list/glory'

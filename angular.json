@@ -59,6 +59,18 @@
 								{
 									"replace": "src/shared/enum/card-super-types.ts",
 									"with": "src/shared/enum/prod/card-super-types.ts"
+								},
+								{
+									"replace": "src/shared/enum/set-urls.ts",
+									"with": "src/shared/enum/prod/set-urls.ts"
+								},
+								{
+									"replace": "src/shared/enum/conspiracy-sub-types.ts",
+									"with": "src/shared/enum/prod/conspiracy-sub-types.ts"
+								},
+								{
+									"replace": "src/shared/enum/reminder-texts-with-urls.ts",
+									"with": "src/shared/enum/prod/reminder-texts-with-urls.ts"
 								}
 							]
 						},

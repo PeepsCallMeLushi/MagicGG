@@ -1,7 +1,8 @@
 import { CardRarity } from "../../shared/enum/card-rarity";
 import { CardSet } from "../../shared/enum/card-set";
-import { CardSubTypes } from "../../shared/enum/card-sub-types";
 import { CardTypes } from "../../shared/enum/card-types";
+import { ConspiracySubTypes } from "../../shared/enum/conspiracy-sub-types";
+import { ReminderTextsWithURLs } from "../../shared/enum/reminder-texts-with-urls";
 import { GloryCard, SetIdRarity } from "../../shared/models/glory-card.model";
 
 export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
@@ -22,7 +23,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you performed 2 or more extra actions in addition to what the multiplayer game rules allows <b>Move 2</b>.',
 		'https://mtg.design/i/tvzl83.jpg',
@@ -50,7 +51,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you make a player complain during a multiplayer game you\'re both participating in <b>Roll a d6 </b>.',
 		'https://mtg.design/i/viot94.jpg',
@@ -72,16 +73,10 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you make your designated Foe complain during a multiplayer game you\'re both participating in <b>Move 3 </b>.',
 		'https://mtg.design/i/qvsg77.jpg',
-		'',
-		'',
-		'',
-		[
-			'Designated Foe refers to the person in your Foe conspiracy card.',
-		],
 	),
 	new GloryCard(
 		4,
@@ -100,7 +95,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you witness a player rolls 10 or more dice at the same time while they\'re playing a game <b>Roll 2d6</b>.',
 		'https://mtg.design/i/joun73.jpg',
@@ -129,16 +124,10 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If your designated Foe was the first player to be eliminated in a multiplayer game <b>Roll a d6</b>.',
 		'https://mtg.design/i/fqmc11.jpg',
-		'',
-		'',
-		'',
-		[
-			'Designated Foe refers to the person in your Foe conspiracy card.',
-		],
 	),
 	new GloryCard(
 		6,
@@ -157,7 +146,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you have at least 10 objects in the game you\'re playing <b>Move 2</b>.',
 		'https://mtg.design/i/ugtu39.jpg',
@@ -165,10 +154,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'To have an object in a game means to have a permanent on the battlefield, a miniature on the board, a house in a monopoly board.',
-			'Resources like the chips in Wyrmspan or Monopoly bills do not count as you having objects in the game. They count towards your resources.',
-			'Shared objects such as terrain, or common decks of cards that every player can draw from, such as the decks in Monopy or Uno, do not count towards you having those objects.'
-		],
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES
+		]
 	),
 	new GloryCard(
 		7,
@@ -187,7 +174,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you lost all of one resource without losing the game after turn 6 <b>Move 5</b>.',
 		'https://mtg.design/i/wkwt19.jpg',
@@ -195,13 +182,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES,
 			'This card can be played on your turn 7 or further',
-			'Objects in the game also count as a resource',
-			'Spending all of one resource does not count as losing. To lose it means someone focibly took it from your or destroyed that resource. Like a boardwipe, forcing you to pay all your money for a debt or taking control of the only creature you controlled.',
-			'To have an object in a game means to have a permanent on the battlefield, a miniature on the board, a house in a monopoly board.',
-			'Resources like the chips in Wyrmspan or Monopoly bills do not count as you having objects in the game. They count towards your resources.',
-			'Shared objects such as terrain, or common decks of cards that every player can draw from, such as the decks in Monopy or Uno, do not count towards you having those objects.',
-			'Shared resources such as the bank do not count towards your resources since it is shared by all players'
 		],
 	),
 	new GloryCard(
@@ -221,7 +203,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If your designated Friend complimented an action you did within the game or some object you own pertaining to the game during a multiplayer game you both are participating in <b>both Move 3</b>.',
 		'https://mtg.design/i/pyzl61.jpg',
@@ -229,7 +211,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'Designated Friend refers to the person in your Friend conspiracy card.',
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES,
 			'To compliment an action you did within the game means to be complimented on an action like a board wipe or playing a card that they might find cool during that multiplayer game. Complimenting actions done outside of the game or unrelated to that game do not count.',
 			'To compliment some object you own pertaining to the game means to be complimented on the material needed to play the game, such as being complimented for sleeves you own, or the dice you\'re using, or your deckbox. Complimenting objects outside of the game or unrelated to the game happening right now, like playing Magic: The Gathering and complimenting the paint job done on miniatures, does not count.',
 		],
@@ -251,7 +233,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you are the 1st player to be eliminated of a game <b>Roll a d6</b>.',
 		'https://mtg.design/i/ktgb37.jpg',
@@ -273,7 +255,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If any other player passes by the starting house <b>Move 3</b>',
 		'https://mtg.design/i/iirq14.jpg',
@@ -302,7 +284,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.SINGLE_USE
+			ConspiracySubTypes.SINGLE_USE
 		],
 		'If you have lost at least 5 objects during a single Multiplayer game you\'re participating on < b > Move 2 </b>',
 		'https://mtg.design/i/pywz02.jpg',
@@ -310,11 +292,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'Disposing of an object does not count as losing that object. To lose it means someone focibly took it from your or destroyed that object. Like a removal, a boardwipe you didn\'t cast, forcing you to sacrifice permanents, taking control of your permanents with an effect that isn\'t yours.',
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES,
 			'This conspiracy cares for the amount of objects lost during the game, not in a single instance, meaning that if you lost an object per turn, it will still count towards the total that this conspiracy cares for.',
-			'To have an object in a game means to have a permanent on the battlefield, a miniature on the board, a house in a monopoly board.',
-			'Resources like the chips in Wyrmspan or Monopoly bills do not count as you having objects in the game. They count towards your resources.',
-			'Shared objects such as terrain, or common decks of cards that every player can draw from, such as the decks in Monopy or Uno, do not count towards you having those objects.'
 		],
 	),
 	new GloryCard(
@@ -334,7 +313,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'If a player gets more than one resource in a single turn <b>Roll a d6</b>.',
 		'https://mtg.design/i/eoev09.jpg',
@@ -342,12 +321,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'A Reusable Conspiracy may only be played any time the owner of the Conspiracy is participating in a multiplayer game.',
-			'Reusable Conspiracies stay in effect while the game plays out and observe every action waiting to be triggered.',
-			'You may take back your Reusable Conspiracies at the end of the game instead of being shuffled back into the conspiracy deck.',
-			'You may still choose to shuffle any used Reusable Conspiracy back into the Conspiracy deck, if you do draw that many cards from the Conspiracy deck.',
-			'You may only shuffle back Reusable Conspiracy cards that were used during the last game'
-		],
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES
+		]
 	),
 	new GloryCard(
 		13,
@@ -366,7 +341,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'When one or more players are Eliminated <b>Move 2</b>.',
 		'https://mtg.design/i/sbbn61.jpg',
@@ -394,7 +369,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'At the start of your turn, if you\'re tied for last, or you\'re second to last  in the multiplayer game you\'re participating on <b>Move 1</b>.',
 		'https://mtg.design/i/tqfv10.jpg',
@@ -403,7 +378,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		[
 			'Second to last means the position right above the last position. This means in a game with 4 people, 3rd place is the second to last. In a game with 3 people, 2nd place is the second to last. In a game with 2 people remaining, 1st place is second to last.',
-			'Establish the criteria that determines who the last player is with the remaining players on the table and stick to that criteria. It could be Life points, cards in hand, ammount of a certain resource. After agreeing on which criteria determines what causes a player to be the last player, that criteria cannot change for the duration of the game to avoid benefiting you or avoiding you benefiting from this Conspiracy. If, for example, life points is the criteria that determines who is winning and who is losing, then that criteria should be used for the remainder of the game.'
+			'Establish the criteria that determines who the last player is with the remaining players on the table and stick to that criteria. It could be Life points, cards in hand, ammount of a certain resource. After agreeing on which criteria determines what causes a player to be the last player, that criteria cannot change for the duration of the game to avoid benefiting you or avoiding you benefiting from this Conspiracy. If, for example, life points is the criteria that determines who is winning and who is losing, then that criteria should be used for the remainder of the game.',
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES
 		],
 	),
 	new GloryCard(
@@ -423,7 +399,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'Whenever a player prevents another player from doing their intentended action with game actions <b>Move 5</b>.',
 		'https://mtg.design/i/ipgk78.jpg',
@@ -452,7 +428,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'If a player caused two or more players to lose all of one or more resources after their turn 4 <b>Move 5</b>.',
 		'https://mtg.design/i/xgaw79.jpg',
@@ -460,6 +436,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES,
 			'You can simultaneously be the player who causes two or more players to lose all of one or more resources and one of the players that lost those resources. For example, if you cast a boardwipe that destroys all of your creatures and all creatures of another player you\'ve fufilled the requirements of this Conspiracy.',
 			'This Conspiracy cares for how many players were affected by a single event or action. This means that if a player needs an action or event to make to make a player lose a resource, and then does it again for another player, it doesn\'t count. Something like a board wipe needs to occur since it is a single action affecting multiple players.',
 			'This conspiracy triggers only on the turn 5 or further of the player who is causing the other players to lose their resources.'
@@ -482,7 +459,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'At the start of your turn, if you\'re the losing player <b>Move 3</b>.',
 		'https://mtg.design/i/rszy86.jpg',
@@ -490,7 +467,8 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
-			'Establish the criteria that determines who the last player is with the remaining players on the table and stick to that criteria. It could be Life points, cards in hand, ammount of a certain resource. After agreeing on which criteria determines what causes a player to be the last player, that criteria cannot change for the duration of the game to avoid benefiting you or avoiding you benefiting from this Conspiracy. If, for example, life points is the criteria that determines who is winning and who is losing, then that criteria should be used for the remainder of the game.'
+			'Establish the criteria that determines who the last player is with the remaining players on the table and stick to that criteria. It could be Life points, cards in hand, ammount of a certain resource. After agreeing on which criteria determines what causes a player to be the last player, that criteria cannot change for the duration of the game to avoid benefiting you or avoiding you benefiting from this Conspiracy. If, for example, life points is the criteria that determines who is winning and who is losing, then that criteria should be used for the remainder of the game.',
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES
 		],
 	),
 	new GloryCard(
@@ -510,7 +488,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'Whenever you play this conspiracy, if there\'s 2 or more other Reusable Conspiracies <b>Move 4</b>.<br>Whenever another Reusable Conspiracy is played, <b>Move X</b> where X is half the amount of Reusable Conspiracies currently active in this game rounded down.<br>If another Reduce, Reuse, and Recycle is currently active and you don\'t own it, you <b>Move 4</b> instead.<br>You can only own one Reduce, Reuse, and Recycle Conspiracy at a time.',
 		'https://mtg.design/i/ffag55.jpg',
@@ -538,14 +516,16 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'At the start of each of your turns, if there are at least 20 objects in the game <b>Move 1</b>.',
 		'https://mtg.design/i/nrti55.jpg',
 		'',
 		'',
 		'',
-		[],
+		[
+			ReminderTextsWithURLs.OBJECTS_AND_RESOURCES
+		],
 	),
 	new GloryCard(
 		20,
@@ -564,7 +544,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.REUSABLE
+			ConspiracySubTypes.REUSABLE
 		],
 		'If one or more players perform 2 or more actions in addition to what the game allows in a single turn <b>Move 2</b>.',
 		'https://mtg.design/i/tdwz00.jpg',
@@ -594,7 +574,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'Everyone who had their designated Friend and Foe arguing or debating with each other while both are in the same multiplayer game <b>Roll 2d6</b>.',
 		'https://mtg.design/i/awsz52.jpg',
@@ -622,7 +602,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'If you didn\'t win any multiplayer game today <b> Roll 2d6 </b>.<br>If the result of at least one of the dice is a 6 or both dice produced the same result, repeat this process.<br>Everytime you resolve this effect, everyone else who didn\'t win a single multiplayer game today <b>Moves 1</b>.<br>Every time you rolled 6 dice this way, reset the count and move BACK to the start, and everyone else who didn\'t also win a game <b>Moves 2 BACK</b>.',
 		'https://mtg.design/i/nzna33.jpg',
@@ -650,7 +630,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'<b>Roll 3d6</b> per End of Day Conspiracies resolved before this one.<br>You get an extra Roll for each result that is even.Extra rolls do not generate other extra rolls.<br>The last player on the board gets an extra roll for each result that is odd.You cannot be the last player.Check who is the last player besides you after each odd result.',
 		'https://mtg.design/i/zfvp75.jpg',
@@ -672,7 +652,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'If someone said any of the following phrases or phrases with similar meanings, during a multiplayer game:<ul><li>"Sempre a mim!"</li><li>"Porquê eu!?"</li><li>Não é assim tão mau" / "Podia ser pior"</li></ul><b>Roll 2d6</b> per phrase said, once per phrase.<br>The first placed player <b>Moves X BACK</b> where X is half of the amount you moved rounded up, if you\'re the first placed player, the second placed player <b>Moves X BACK</b> instead.',
 		'https://mtg.design/i/gmqa97.jpg',
@@ -694,7 +674,7 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'If someone said any of the following phrases or phrases with similar meanings, during a multiplayer game:<ul><li>"Such a potato play!"</li><li>"Best day ever!"</li><li>"Só vim ver a bola"</li></ul><b>Roll 2d6</b> per phrase said, once per phrase.<br>The last placed player <b>Moves X</b> where X is half of the amount you moved rounded up, if you\'re the last placed player, move twice that amount instead.',
 		'https://mtg.design/i/wjoy46.jpg',
@@ -716,15 +696,9 @@ export const CONSPIRACY_GLORY_1_SET_LIST: GloryCard[] = [
 			CardTypes.CONSPIRACY
 		],
 		[
-			CardSubTypes.END_OF_DAY
+			ConspiracySubTypes.END_OF_DAY
 		],
 		'During a multiplayer game, if a Player got roasted/bullied by their own designated Friend while that Player was talking seriously or explaining something.<br>That friend <b>Moves 3</b>, the player who got roasted / bullied <b>Moves 5</b>, you <b>Roll a d6</b> per player roasted / bullied by their designated Friend.',
 		'https://mtg.design/i/qmpb20.jpg',
-		'',
-		'',
-		'',
-		[
-			'Designated Friend refers to the person in your Friend conspiracy card.',
-		]
 	),
 ]
