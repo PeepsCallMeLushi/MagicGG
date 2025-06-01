@@ -55,8 +55,9 @@ export class GloryFormatsComponent {
 			specialRules: [
 				'End of Day happens after the group has had dinner, the next day starts at that time',
 				'All players start the day with their hands maxed out',
-				'Maximum Shared Hansize of 12 cards between glory and conspiracy cards',
-				'Glory Cards and Conspiracy Cards share the same deck which is called the Glory Deck',
+				'Maximum Shared Handsize of 12 cards between glory and conspiracy cards',
+				'Custom cards called Glory Cards and Conspiracy Cards share the same deck which is called the Glory Deck',
+				'Normal Arch-Enemy cards are used to form the Arch-Enemy Deck',
 				'Friend Conspiracies and Foe Conspiracies do not count towards handsize',
 				'1 Mythic Glory card, Friend Conspiracy and Foe Conspiracy cards each per person',
 				'2 Rare Cards per person',

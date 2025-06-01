@@ -35,6 +35,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - Endstep<br><br>Sacrifice Golos\' Piligrimage: If Golos\' Piligrimage had 20 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep that player gets a Pilgrim counter." ${ReminderTexts.PILGRIM_COUNTERS}`,
 		'https://mtg.design/i/zwhe08.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers on every endstep of every player participating in the current game.',
+		]
 	),
 	new GloryCard(
 		2,
@@ -61,6 +67,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - A player Eats, Drinks, leaves the table while still alive ${ReminderTexts.EATING_DRINKING}<br><br>Sacrifice Spike\'s Meet-up: If Spike\'s Meet-up had 5 or more combo counters on it, you get an emblem with "All players play with their hands and with the top card of their libraries revealed. Players may play cards from the top of their library. Players may play 2 additional lands on each of their turns. Players may cast spells from exile by paying their mana cost and by exiling a card from their and. Each nonland card in each player\'s graveyard has escape. The Escape cost is their mana cost. Permanents cast this way enter with a finality counter on them."`,
 		'https://mtg.design/i/brzg41.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers each time any player participating in the current game takes a drink to their mouth, food to their mouth or leaves the table while being still alive.',
+		],
 	),
 	new GloryCard(
 		3,
@@ -87,6 +99,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - Gaining 5 or more Life, Attacking without Tapping, Exiling creatures creatures from the battlefield<br><br>Sacrifice Ajani\'s Protection: If Ajani\'s Protection had 5 or more combo counters on it, you get an emblem with "All Creatures have Flying, Vigilance, Lifelink, Double Strike, Shroud, Indistructuble and Toxic 1. Creatures can block more than one creature. Whenever a Life is gained through combat put a counter on this emblem. If this emblem has 120 or more counters or every player has an Ajani planeswalker with different names on the field, everyone wins the game."`,
 		'https://mtg.design/i/ukxp81.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a player participating in the current game agains 5 or life with a single effect, whenever a creature attacks without tapping, whenever a creature is exiled from the battlefield.',
+		]
 	),
 	new GloryCard(
 		4,
@@ -163,6 +181,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - Drawing a card outside of their draw phase, Scrying, Surveiling<br><br>Sacrifice Jace\'s Generosity: If Jace\'s Generosity had 3 or more combo counters on it, you get an emblem with "All Players Draw an additional Card in their draw phase"`,
 		'https://mtg.design/i/ymew54.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a player participating in the current game draws a card outside of their draw step, whenever a player scries, whenever a player surveils.',
+			'If a replacement effects causes a player to draw more than a card within their draw step, it still counts as drawing INSIDE the drawstep'
+		]
 	),
 	new GloryCard(
 		7,
@@ -364,6 +389,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - Discard a card, Nonland Permanents being sacrificed<br><br>Sacrifice Tiny Bones\' Tiny Bones: If Tiny Bones\' Tiny Bones had 4 or more combo counters on it, you get an emblem with: "Whenever a player discards a card or sacrifices a permanent they get a 2/2 Zombie that is all colours if it was a creature, they get a gold token if it was a land, they draw a card if it was anything else."`,
 		'https://mtg.design/i/xyfz25.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a player participating in the current game discards a card or whenever a player sacrifices a nonland permanent.',
+		]
 	),
 	new GloryCard(
 		15,
@@ -567,6 +598,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - One or more players lost exactly 1 life each<br><br>Sacrifice Ob Nixilis\' Impulse: If Ob Nixilis\' Impulse had 10 or more combo counters on it, you get an emblem with "Whenever a player causes one or more other players to lose exactly 1 life each, that player exiles the top card of their library and they may cast it until their next end step."`,
 		'https://mtg.design/i/zpju99.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever one or more players participating in the current game lose exactly 1 life each.',
+		]
 	),
 	new GloryCard(
 		22,
@@ -618,6 +655,12 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - Lands entering the battlefield<br><br>Sacrifice Nissa\'s Reach: If Nissa\'s Reach had 8 or more combo counters on it, you get an emblem with "All Players\' Lands produce one more mana that it could produce"`,
 		'https://mtg.design/i/zbci78.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a land from any player participating in the current game enters the battlefield.',
+		]
 	),
 	new GloryCard(
 		24,
@@ -1416,6 +1459,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - A Player plays 3 or more cards in a turn, A player has 2 or more spells in the stack<br><br>Sacrifice Johnny\'s Guidance: If Johnny\'s Guiance had 5 or more combo counters on it, you get an emblem with "All instants and glory instants have Storm. Whenever a player casts a sorcery or Glory sorcery, each player copies that sorcery for each time they\'ve cast their commander this game. Enter the battlefield triggers trigger thrice."`,
 		'https://mtg.design/i/wlpd94.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a singular player from any of the players participating in the game plays 3 or more cards in a turn or when a singular player from any of the players controls two or more spells in the stack at the same time before the stack fully resolves.',
+			'Playing a land counts as playing a card',
+		]
 	),
 	new GloryCard(
 		47,
@@ -1741,6 +1791,7 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		'',
 		'',
 		[
+			'This permanent\'s Combo Star triggers whenever any card with a subtype enters the battlefield under the control of any player participating in the current game.',
 			'A subtype are card types in front of the \'-\' in a card, such as \'Goblin\', \'Elf\', \'Equipment\', \'Aura\', \'Arcane\', \'Curse\' and many others.',
 			'"The Ur-Dragon" that deals commander damage is a different entity from any Ur-Dragon on the table. It is a commander damage stat that should be tracked in addition to all other commander damage stats on the table.',
 			'The emblem allows players to put permanents with a subtype on the battlefield without casting them if another player put a nonland nontoken permanent on the battlefield without casting it and if that player has chosen the second mode of the villanous choice. If a permanent with a subtype was put on the battlefield with the effect of this emblem, this emblem does not trigger.',
@@ -1773,6 +1824,13 @@ export const MAGIC_GLORY_1_SET_LIST: GloryCard[] = [
 		[],
 		`${ReminderTextsWithURLs.COMBO_STAR} - A Creature with 5 or more Mana Cost entering the battlefield, a player losing 10 or more life through combat<br><br>Sacrifice Timmy\'s Fun: If Timmy\'s fun had 5 or more combo counters on it, you get an emblem with "At the beginning of each player\'s upkeep put a counter on this emblem. All Creatures have +1/+1 for each counter on this emblem. All creatures have haste if this emblem has 5 or more counters, Trample if it has 10 or more and Double Strike if this emblem has 15 or more counters."`,
 		'https://mtg.design/i/zhyl50.jpg',
+		'',
+		'',
+		'',
+		[
+			'This permanent\'s Combo Star triggers whenever a creature with the original mana cost of 5 or more enters the battlefield under the control of any player participating in the current game, or a player loses 10 or more life through combat.',
+			'This permanent\'s Combo Star doesn\'t add the life lost through combat in between combat steps, it is 10 or more life in a singular combat step, each combat step.'
+		]
 	),
 	new GloryCard(
 		59,
