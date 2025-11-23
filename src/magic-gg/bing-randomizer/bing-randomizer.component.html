@@ -1,0 +1,142 @@
+<div class="info-content">
+	<h1>Randomizador do Bingo</h1>
+	<mat-grid-list cols="6">
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Neutras</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('neutral')">
+			</mat-form-field>
+		</mat-grid-tile>
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Brancas</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('white')">
+			</mat-form-field>
+		</mat-grid-tile>
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Azuis</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('blue')">
+			</mat-form-field>
+		</mat-grid-tile>
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Pretas</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('black')">
+			</mat-form-field>
+		</mat-grid-tile>
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Vermelhas</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('red')">
+			</mat-form-field>
+		</mat-grid-tile>
+		<mat-grid-tile>
+			<mat-form-field appearance="fill">
+				<mat-label>Quests Verdes</mat-label>
+				<input
+						matInput
+						type="number"
+						placeholder="Quantas queres?"
+						appearance="outline"
+						[formControl]="getFormControl('green')">
+			</mat-form-field>
+		</mat-grid-tile>
+	</mat-grid-list>
+	<button
+			mat-button
+			(click)="generateQuests()">
+		Gerar Quests
+	</button>
+	<div class="margin-top-10 margin-bottom-10"></div>
+	<mat-accordion
+		*ngIf="neutralQuests.length > 0
+			|| whiteQuests.length > 0
+			|| blueQuests.length > 0
+			|| blackQuests.length > 0
+			|| redQuests.length > 0
+			|| greenQuests.length > 0">
+		<mat-expansion-panel>
+			<mat-expansion-panel-header>
+				Resultados
+			</mat-expansion-panel-header>
+			<div class="width-100">
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let q of neutralQuests">
+						{{q.category + q.number}}: {{q.timesUsed}}
+					</div>
+				</div>
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let w of whiteQuests">
+						{{w.category + w.number}}: {{w.timesUsed}}
+					</div>
+				</div>
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let u of blueQuests">
+						{{u.category + u.number}}: {{u.timesUsed}}
+					</div>
+				</div>
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let b of blackQuests">
+						{{b.category + b.number}}: {{b.timesUsed}}
+					</div>
+				</div>
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let r of redQuests">
+						{{r.category + r.number}}: {{r.timesUsed}}
+					</div>
+				</div>
+				<div class="display-inline-block width-1-6">
+					<div *ngFor="let g of greenQuests">
+						{{g.category + g.number}}: {{g.timesUsed}}
+					</div>
+				</div>
+			</div>
+		</mat-expansion-panel>
+	</mat-accordion>
+	<div class="margin-top-10 margin-bottom-10"></div>
+	<button
+			mat-button
+			(click)="gerarBing()"
+			*ngIf="this.bingQuests.length === 0">
+		Gerar Bingo
+	</button>
+	<app-bing-card
+			*ngIf="bingQuests.length > 0"
+			[bingToDisplay]="bingQuests"
+			(bingAccepted)="$event ? addBingToHistory() : gerarBing()">
+	</app-bing-card>
+	<div class="width-100 margin-top-10" *ngIf="pastBingQuests.length > 0">
+		<span>Total Bingo Cards: {{ pastBingQuests.length }}</span> <br>
+		<div *ngFor="let quest of pastBingQuests" class="width-1-3 display-inline-block margin-10">
+			<app-bing-card
+					[bingToDisplay]="quest">
+			</app-bing-card>
+		</div>
+	</div>
+</div>

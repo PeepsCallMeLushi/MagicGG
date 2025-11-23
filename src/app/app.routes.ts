@@ -1,13 +1,14 @@
 import { Routes } from '@angular/router';
-import { GloryCardListComponent } from '../magic-gg/glory-card-list/glory-card-list.component';
-import { ConspiracyListComponent } from '../magic-gg/conspiracy-card-list/conspiracy-card-list.component';
-import { HomePageComponent } from '../magic-gg/home-page/home-page.component';
-import { GlossaryComponent } from '../magic-gg/glossary/glossary.component';
-import { CardViewerComponent } from '../shared/component/card-viewer/card-viewer.component';
+import { BingRandomizerComponent } from '../magic-gg/bing-randomizer/bing-randomizer.component';
 import { CardSetListComponent } from '../magic-gg/card-set-list/card-set-list.component';
+import { ConspiracyListComponent } from '../magic-gg/conspiracy-card-list/conspiracy-card-list.component';
+import { ConspiracySubtypesComponent } from '../magic-gg/conspiracy-subtypes/conspiracy-subtypes.component';
+import { GloryCardListComponent } from '../magic-gg/glory-card-list/glory-card-list.component';
 import { GloryFormatsComponent } from '../magic-gg/glory-formats/glory-formats.component';
 import { GlorySupertypeComponent } from '../magic-gg/glory-supertype/glory-supertype.component';
-import { ConspiracySubtypesComponent } from '../magic-gg/conspiracy-subtypes/conspiracy-subtypes.component';
+import { GlossaryComponent } from '../magic-gg/glossary/glossary.component';
+import { HomePageComponent } from '../magic-gg/home-page/home-page.component';
+import { CardViewerComponent } from '../shared/component/card-viewer/card-viewer.component';
 
 export const routes: Routes = [
 	{
@@ -48,6 +49,10 @@ export const routes: Routes = [
 	{
 		path: 'glossary',
 		component: GlossaryComponent,
+	},
+	{
+		path: 'randomizer',
+		component: BingRandomizerComponent,
 	},
 	{
 		path: '**',

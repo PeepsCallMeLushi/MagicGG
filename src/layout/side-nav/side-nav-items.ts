@@ -39,5 +39,10 @@ export const SIDE_NAV_ITEMS: SideNavItem[] = [
 		text: 'Glossário',
 		icon: 'import_contacts',
 		url: 'glossary'
+	},
+	{
+		text: 'Randomizer',
+		icon: 'shuffle',
+		url: 'randomizer'
 	}
 ];

@@ -1,0 +1,26 @@
+<mat-card>
+	<mat-card-content>
+		@for (quest of bingToDisplay; track $index) {
+			<div class="display-inline-block width-1-5 margin-top-10">
+				{{ quest.category + quest.number }}
+			</div>
+			<br *ngIf="($index + 1) % 5 === 0">
+		}
+	</mat-card-content>
+	<mat-card-actions [align]="'end'">
+		<button
+				(click)="wasBingoAccepted(true)"
+				mat-button>
+			Aceitar Bingo
+		</button>
+		<button (click)="wasBingoAccepted(false)" mat-button>
+			Novo Bingo
+		</button>
+	</mat-card-actions>
+	<mat-card-actions [align]="'end'">
+
+	</mat-card-actions>
+	<mat-card-actions [align]="'end'">
+
+	</mat-card-actions>
+</mat-card>
