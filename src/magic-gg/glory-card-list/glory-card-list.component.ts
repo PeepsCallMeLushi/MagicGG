@@ -34,7 +34,6 @@ export class GloryCardListComponent implements OnInit {
 
 	public revealCard(revealDate: Date | undefined):boolean {
 		if (revealDate) {
-			console.log(revealDate);
 			return new Date().getTime() > revealDate.getTime();
 		}
 		return true;

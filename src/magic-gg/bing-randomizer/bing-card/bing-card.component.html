@@ -7,7 +7,7 @@
 			<br *ngIf="($index + 1) % 5 === 0">
 		}
 	</mat-card-content>
-	<mat-card-actions [align]="'end'">
+	<mat-card-actions [align]="'end'" *ngIf="!isPastBing">
 		<button
 				(click)="wasBingoAccepted(true)"
 				mat-button>
@@ -17,10 +17,9 @@
 			Novo Bingo
 		</button>
 	</mat-card-actions>
-	<mat-card-actions [align]="'end'">
-
-	</mat-card-actions>
-	<mat-card-actions [align]="'end'">
-
+	<mat-card-actions [align]="'end'" *ngIf="isPastBing">
+		<button (click)="deleteBing(false)" mat-button>
+			Apagar Bingo
+		</button>
 	</mat-card-actions>
 </mat-card>

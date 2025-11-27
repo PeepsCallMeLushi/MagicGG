@@ -18,11 +18,15 @@ export class BingCardComponent {
 
 	@Input() bingToDisplay: QuestCount[] = [];
 	@Input() isPastBing = false;
-	@Input() isViewingPastBing = false;
 	@Output() bingAccepted: EventEmitter<boolean> = new EventEmitter();
+	@Output() apagarBing: EventEmitter<boolean> = new EventEmitter();
 
 	public wasBingoAccepted(accepted: boolean): void {
 		this.bingAccepted.emit(accepted);
+	}
+
+	public deleteBing(accepted: boolean): void {
+		this.apagarBing.emit(accepted);
 	}
 
 }

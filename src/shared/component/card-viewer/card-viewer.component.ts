@@ -36,7 +36,6 @@ export class CardViewerComponent implements OnInit {
 
 	private getCardToDisplay(): void {
 		const setlist = this.getCardSet();
-		console.log(setlist);
 		if (setlist.length > 0) {
 			const cardToGet = this.acRoute.snapshot.paramMap.get('id') ? this.acRoute.snapshot.paramMap.get('id') : 0;
 			const setToGet = this.acRoute.snapshot.paramMap.get('set')?.toUpperCase();

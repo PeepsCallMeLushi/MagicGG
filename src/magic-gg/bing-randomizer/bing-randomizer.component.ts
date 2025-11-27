@@ -93,6 +93,12 @@ export class BingRandomizerComponent implements OnInit {
 				: [];
 			this.greenQuests = greenQuests;
 		}
+		if (localStorage.getItem('pastBingos')) {
+			const pastBingQuests = localStorage.getItem('pastBingos')
+				? JSON.parse(localStorage.getItem('pastBingos') as string)
+				: [];
+			this.pastBingQuests = pastBingQuests;
+		}
 
 	}
 
@@ -151,16 +157,16 @@ export class BingRandomizerComponent implements OnInit {
 		this.findQuest(this.blackQuests, randomAmtB);
 		this.findQuest(this.redQuests, randomAmtR);
 		this.findQuest(this.greenQuests, randomAmtG);
-		const auxBingQuests = this.sortTheBing();
-		const duplicates = this.pastBingQuests.filter(quest => {
+		const auxBingQuests: QuestCount[] = this.sortTheBing();
+		const duplicates = this.pastBingQuests.filter((quest: QuestCount[]) => {
 			let match = 0;
-			for (let i = 0; i < quest.length; i +=1 ) {
-				if (quest[i].category === auxBingQuests[i].category && quest[i].number === auxBingQuests[i].number) {
-					match +=1;
+			quest.forEach( (q: QuestCount, index) => {
+				if (q.category === auxBingQuests[index].category && q.number === auxBingQuests[index].number) {
+					match += 1;
 				}
-			}
+			});
 			return match === 25;
-		})
+		});
 		if (duplicates.length > 0) {
 			this.gerarBing();
 		} else {
@@ -173,31 +179,67 @@ export class BingRandomizerComponent implements OnInit {
 	}
 
 	public addBingToHistory(): void {
+		this.bingQuests.forEach(quest => {
+			quest.timesUsed += 1;
+		});
 		this.pastBingQuests.push(this.bingQuests);
+		localStorage.setItem('pastBingos', JSON.stringify(this.pastBingQuests));
+		localStorage.setItem('neutralQuests', JSON.stringify(this.neutralQuests));
+		localStorage.setItem('whiteQuests', JSON.stringify(this.whiteQuests));
+		localStorage.setItem('blueQuests', JSON.stringify(this.blueQuests));
+		localStorage.setItem('blackQuests', JSON.stringify(this.blackQuests));
+		localStorage.setItem('redQuests', JSON.stringify(this.redQuests));
+		localStorage.setItem('greenQuests', JSON.stringify(this.greenQuests));
 		this.gerarBing();
 	}
 
+	public apagarBing(index: number): void {
+		this.pastBingQuests[index].forEach(quest => {
+			quest.timesUsed -= 1;
+		});
+		this.pastBingQuests.splice(index, 1);
+		localStorage.setItem('pastBingos', JSON.stringify(this.pastBingQuests));
+		localStorage.setItem('inputHandler', JSON.stringify(this.inputHandler.value));
+		localStorage.setItem('neutralQuests', JSON.stringify(this.neutralQuests));
+		localStorage.setItem('whiteQuests', JSON.stringify(this.whiteQuests));
+		localStorage.setItem('blueQuests', JSON.stringify(this.blueQuests));
+		localStorage.setItem('blackQuests', JSON.stringify(this.blackQuests));
+		localStorage.setItem('redQuests', JSON.stringify(this.redQuests));
+		localStorage.setItem('greenQuests', JSON.stringify(this.greenQuests));
+	}
+
 	private findQuest(questList: QuestCount[], targetAmmount: number): void {
-		let minQuestAmt = 0;
-		const auxArr = [];
+		const auxArr: QuestCount[] = [];
 		while (auxArr.length < targetAmmount) {
+			this.recursiveQuest(questList, auxArr, targetAmmount, 0);
+		}
+		this.bingQuests = this.bingQuests.concat(auxArr);
+	}
+
+	private recursiveQuest(questList: QuestCount[], auxArr: QuestCount[], targetAmmount: number, minQuestAmt: number): void {
+		if (targetAmmount > 0) {
 			const minQuests = questList.filter(quest => quest.timesUsed === minQuestAmt);
 			if (minQuests.length >= targetAmmount) {
-				for (let i = 0; i < targetAmmount; i+=1) {
-					const randomQuest = this.random(0, questList.length - 1);
-					auxArr.push(minQuests[randomQuest]);
+				for (let i = 0; i < targetAmmount; i += 1) {
+					this.recursiveRandom(minQuests, auxArr);
 				}
 			} else {
 				for (let i = 0; i < minQuests.length; i += 1) {
-					const randomQuest = this.random(0, questList.length - 1);
-					auxArr.push(minQuests[randomQuest]);
+					this.recursiveRandom(minQuests, auxArr);
 				}
-				minQuestAmt += 1;
-				const minQuests2 = questList.filter(quest => quest.timesUsed === minQuestAmt);
-
+				this.recursiveQuest(questList, auxArr, (targetAmmount - auxArr.length), (minQuestAmt + 1));
 			}
 		}
-		this.bingQuests = this.bingQuests.concat(auxArr);
+	}
+
+	private recursiveRandom(minQuests: QuestCount[], auxArr: QuestCount[]): void {
+		const randomQuestIndex = this.random(0, minQuests.length - 1);
+		const randomQuest = minQuests[randomQuestIndex]
+		if (auxArr.some(q => q.category === randomQuest.category && q.number === randomQuest.number )) {
+			this.recursiveRandom(minQuests, auxArr);
+		} else {
+			auxArr.push(randomQuest);
+		}
 	}
 
 	private sortTheBing(): QuestCount[] {
